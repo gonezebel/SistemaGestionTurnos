@@ -26,14 +26,28 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
  
  ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
 
- **III. Herencia: ** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
+ ** III. Herencia: ** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
 
  EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.
 
 ![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
 
 
- **IV. Poliformismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
+ ** IV. Poliformismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
 
 ![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
+
+## Requisitos iniciales del sistema
+
+**I. Protección de datos personales:** Solo el personal autorizado podrá acceder a los datos sensibles de contacto tanto de pacientes como de médicos, garantizando la privacidad.
+
+**II. Alta de pacientes y profesionales:**  El sistema brindará la posibilidad de incorporar nuevos registros de pacientes y médicos al sistema de forma sencilla y organizada.
+
+**III. Distribución de turnos según disponibilidad:** La asignación de turnos se realizará teniendo en cuenta los horarios disponibles de cada profesional de la salud.
+
+**IV. Visualización de agenda médica:** Cada médico podrá acceder a un calendario donde visualizará todos los turnos que tiene programados.
+
+**V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
+
+
  
