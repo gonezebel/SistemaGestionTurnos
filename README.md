@@ -1,9 +1,13 @@
 # Sistema de Gestión de Turnos - Diseño del Sistema
 ______________________________________________________________________________________________________________________________________________________________________________
 **Autor:** Beloqui, Gonzalo
+
 **Materia:** Diseño Orientado a Objetos
+
 **Carrera:** Tecnicatura en programación
+
 **Profesor:** Velasquez Rojas, Matías Alejandro
+
 **Año:** 2025
 
 **Resumen del proyecto**  
