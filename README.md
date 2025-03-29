@@ -8,7 +8,7 @@
 
 **Profesor:** Velasquez Rojas, Matías Alejandro
 
-**Año:** 2025
+# **Año:** 2025
 
 **Resumen del proyecto**  
 Este repositorio contiene un sistema orientado a modernizar la administración de turnos en un centro de salud de pequeña escala.  
