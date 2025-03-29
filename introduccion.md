@@ -18,7 +18,7 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
  EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).
 
- ![Ejemplo encapsulación](imagenes/diagrama.png)
+ ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
 
  
 
