@@ -51,6 +51,7 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
 ## Casos de uso
 
+
 **I. Registrar un paciente nuevo al sistema**
 
 Actor(es): Personal de atención al paciente
@@ -65,6 +66,7 @@ c. Se guarda la información y se muestra un mensaje confirmando la operación.
 Precondición: El paciente no debe estar previamente registrado.
 
 Postcondición: El paciente se agrega correctamente a la base de datos.
+
 
 **II. Registrar un nuevo profesional de la salud**
 
@@ -81,6 +83,7 @@ Precondiciones: El médico no debe estar previamente cargado en el sistema.
 
 Postcondiciones: El profesional queda disponible para la asignación de turnos y visible en la agenda médica.
 
+
 **III. Asignar un turno con un médico para un paciente**
 
 Actor(es): Paciente, personal de atención al paciente
@@ -94,6 +97,7 @@ b) Se confirma el turno y se informa al paciente.
 
 Precondición: El profesional debe tener disponibilidad en el horario elegido y el paciente debe cumplimentar posibles prescripciones médicas aplicables así como también validacion de cobertura (incluyendo verificación de token de autorización).
 Postcondición: El turno queda registrado y se envía un aviso correspondiente.
+
 
  **IV. Anular un turno programado**
  
@@ -109,6 +113,7 @@ c) El sistema informa al médico que ese horario ha quedado libre.
 Precondición: El turno debe estar vigente.
 
 Postcondición: El turno se anula y se libera el espacio correspondiente en la agenda.
+
 
 **V. Envío de recordatorios de turnos**
 
