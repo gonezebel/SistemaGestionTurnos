@@ -1,6 +1,6 @@
 # Anexo 1 - Introducción al Diseño Orientado a Objetos
 
-##Concepto del Paradigma Orientado a Objetos
+## Concepto del Paradigma Orientado a Objetos
 
 La programación orientada a objetos (en adelante POO) es un enfoque conceptual específico para diseñar programas. Este paradigma se concentra en el objeto como lo percibe el usuario, partiendo de la abstracción de entidades del mundo real como objetos, que tienen datos y comportamientos aosciados. 
 
@@ -12,7 +12,13 @@ i. Organización sistémica: El paradigma estructurado se basa en la división d
 
 ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición del sistema en funciones y procedimientos, la POO parte de la encapsulación de datos y comportamiento. Por otra parte, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales.
 
-##Los cuatro fundamentos de POO
+## Los cuatro fundamentos de POO
+
+ **I. Encapsulación:** Ocultamiento de de detalles internos del objeto, exponiendo solo sus interfaces públicas, favoreciendo, así, la modularidad y la seguridad del sistema.
+
+ EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).
+
+ 
 
 
 
