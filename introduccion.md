@@ -26,5 +26,12 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
  
  ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
 
+ **III. Herencia: ** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
 
+ EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.
+
+  ![Ejemplo herencia](imagenes/01_diagrama_abstracción.jpg)
+
+
+ **IV. Poliformismo: **: 
  
