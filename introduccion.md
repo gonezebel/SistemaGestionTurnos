@@ -30,8 +30,10 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
  EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.
 
-  ![Ejemplo herencia](imagenes/01_diagrama_abstracción.jpg)
+![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
 
 
- **IV. Poliformismo: **: 
+ **IV. Poliformismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
+
+![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
  
