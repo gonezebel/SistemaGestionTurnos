@@ -1,4 +1,7 @@
-# Sistema de Gestión de Turnos
+# Sistema de Gestión de Turnos - Diseño del Sistema
+_________________________________________________________________________________________________________________________________________________________________________________
+
+
 
 **Resumen del proyecto**  
 Este repositorio contiene un sistema orientado a modernizar la administración de turnos en un centro de salud de pequeña escala.  
