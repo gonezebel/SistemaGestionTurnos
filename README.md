@@ -22,5 +22,7 @@ La plataforma está diseñada para optimizar la organización de turnos, evitar 
     III.  Alertas y notificaciones ante cambios o cancelaciones de turnos.  
     IV.   Visualización del historial de turnos por paciente y por profesional.
 
+## Diagramas y diseños
+
 **Anexos**  
 Para acceder a información complementaria, consultá el siguiente archivo: [anexos.md](anexos.md)
