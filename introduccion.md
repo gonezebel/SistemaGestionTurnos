@@ -49,5 +49,81 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
 **V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
 
+## Casos de uso
+
+**I. Registrar un paciente nuevo al sistema**
+
+Actor(es): Personal de atención al paciente
+
+Descripción: El personal carga la información de un paciente que aún no figura en la base.
+
+Flujo principal:
+a. Se accede al módulo de gestión de pacientes.
+b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento, tipo e identificación de cobertura de salud y datos de contacto.
+c. Se guarda la información y se muestra un mensaje confirmando la operación.
+
+Precondición: El paciente no debe estar previamente registrado.
+
+Postcondición: El paciente se agrega correctamente a la base de datos.
+
+**II. Registrar un nuevo profesional de la salud**
+
+Actor(es): Personal administrativo, de recursos humanos o del sector con potestad para la tarea
+
+Descripción: El personal autorizado ingresa los datos de un médico que comenzará a atender en el centro.
+
+Flujo principal:
+a) Se accede al módulo de registro de profesionales.
+b) Se completan los campos obligatorios: nombre completo, especialidad, tipo y número de matrícula profesional y datos de contacto.
+c) Se guarda el registro y se confirma la incorporación.
+
+Precondiciones: El médico no debe estar previamente cargado en el sistema.
+
+Postcondiciones: El profesional queda disponible para la asignación de turnos y visible en la agenda médica.
+
+**III. Asignar un turno con un médico para un paciente**
+
+Actor(es): Paciente, personal de atención al paciente
+
+Descripción: Se agenda una consulta para un paciente, respetando la disponibilidad del profesional.
+
+Flujo principal:
+a) Se elige al paciente y al médico.
+b) Se selecciona una fecha y hora dentro del horario libre del médico.
+b) Se confirma el turno y se informa al paciente.
+
+Precondición: El profesional debe tener disponibilidad en el horario elegido y el paciente debe cumplimentar posibles prescripciones médicas aplicables así como también validacion de cobertura (incluyendo verificación de token de autorización).
+Postcondición: El turno queda registrado y se envía un aviso correspondiente.
+
+ **IV. Anular un turno programado**
+ 
+Actor(es): Paciente, personal de atención al paciente
+
+Descripción: El turno puede ser cancelado por el paciente o por el personal del centro de salud ante un imprevisto.
+
+Flujo principal:
+a) El paciente o el personal elige el turno que desea cancelar desde la plataforma
+b) Confirma la anulación.
+c) El sistema informa al médico que ese horario ha quedado libre.
+
+Precondición: El turno debe estar vigente.
+
+Postcondición: El turno se anula y se libera el espacio correspondiente en la agenda.
+
+**V. Envío de recordatorios de turnos**
+
+Actor(es): Sistema (módulo de automatización de funciones), servidor de mail o mensajería instantánea.
+
+Descripción: El sistema se encarga de recordar al paciente que tiene una cita próxima.
+
+Flujo principal:
+a) El sistema revisa la agenda.
+b) Si hay una consulta próxima, envía un mensaje por correo electrónico o mensaje de Whatsapp.
+c) El paciente recibe la notificación
+d) El paciente confirma asistencia o solicita cancelación.
+
+Precondición: Debe haber un turno programado.
+Postcondición: El paciente recibe el aviso a tiempo.
+
 
  
