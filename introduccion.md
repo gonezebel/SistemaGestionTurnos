@@ -1,21 +1,18 @@
 # Anexo 1 - Introducción al Diseño Orientado a Objetos
 
 **Concepto del Paradigma Orientado a Objetos**
-La programación orientada a objetos (POO) es un enfoque conceptual específico para diseñar programas. Este paradigma se concentra en el objeto como lo percibe el usuario, partiendo de la abstracción de entidades del mundo real como objetos, que tienen datos y comportamientos aosciados.
+La programación orientada a objetos (POO) es un enfoque conceptual específico para diseñar programas. Este paradigma se concentra en el objeto como lo percibe el usuario, partiendo de la abstracción de entidades del mundo real como objetos, que tienen datos y comportamientos aosciados. 
+
+Lo distintivo de la programación orientada a objetos es la técnica de poner todos los atributos y métodos de un objeto en una estructura independiente, la propia clase. En otras palabras, sos objetos son son las "cosas" relevantes para el sistema bajo análisis, mientras que
 
 Diferenciación con el Paradigma Estructurado:
 La programación orientada a objetos difiere de la programación por procedimientos tradicional o "procedimental" en que:
 
-i. Organización sistémica: El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que el paradigma orientado a objetos se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados.
-ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición del sistema en funciones y procedimientos, el modelo orientado a objetos parte de la encapsulación de datos y comportamiento 
-Examina los objetos que son parte de un sistema, donde cada objeto representa en computadora alguna cosa o evento real.
-Al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento.
-Tiene como meta principal la reusabilidad de objetos, lo que reduce los costos de desarrollo en sistemas computacionales.
+i. Organización sistémica: El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que el paradigma orientado a objetos se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. Las clases son agrupaciones de objetos que son óptimas para reutilizarse y darles mantenimiento. Una clase define el conjunto de atributos y comportamientos compartidos por cada objeto de la clase. Los programadores deben definir las diversas clases en el programa que escriben, y cuando el programa se ejecuta, los objetos se pueden crear a partir de la clase establecida.
 
-Definición de Objeto
-Los objetos son personas, lugares o cosas relevantes para el sistema bajo análisis. Pueden ser clientes, artículos, pedidos, etc. También podrían ser pantallas GUI o áreas de texto en la pantalla.
-Definición de Clase
-Las clases son agrupaciones de objetos que son óptimas para reutilizarse y darles mantenimiento. Una clase define el conjunto de atributos y comportamientos compartidos por cada objeto de la clase. Los programadores deben definir las diversas clases en el programa que escriben, y cuando el programa se ejecuta, los objetos se pueden crear a partir de la clase establecida.
-Lo distintivo de la programación orientada a objetos es la técnica de poner todos los atributos y métodos de un objeto en una estructura independiente, la propia clase.ReintentarClaude puede cometer errores. Verifique las respuestas.
+
+ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición del sistema en funciones y procedimientos, el modelo orientado a objetos parte de la encapsulación de datos y comportamiento. Por otra parte, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, lo que reduce los costos de desarrollo en sistemas computacionales.
+
+
 
  
