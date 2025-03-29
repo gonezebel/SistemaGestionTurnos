@@ -1,9 +1,10 @@
 # Sistema de Gestión de Turnos - Diseño del Sistema
-_________________________________________________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________________________
 **Autor:** Beloqui, Gonzalo
-Materia: Diseño Orientado a Objetos
-Carrera: Tecnicatura en programación
-Profesor:     
+**Materia:** Diseño Orientado a Objetos
+**Carrera:** Tecnicatura en programación
+**Profesor:** Velasquez Rojas, Matías Alejandro
+**Año:** 2025
 
 **Resumen del proyecto**  
 Este repositorio contiene un sistema orientado a modernizar la administración de turnos en un centro de salud de pequeña escala.  
