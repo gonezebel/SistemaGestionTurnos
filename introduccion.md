@@ -16,7 +16,7 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   
   - *EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).*
 
- ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
+       ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
 
 **II. Abstracción:**  Simplificar la complejidad de los objetos reales modelando solo los aspectos esenciales relevantes para el sistema.
 
