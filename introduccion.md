@@ -31,7 +31,7 @@ El paradigma estructurado se basa en la división del programa en procedimientos
 ![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
 
 
- ** IV. Poliformismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
+ ** IV. Polimorfismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
 
  EJ: Los instrumentos musicales de una orquesta, donde cada instrumento (violín, trompeta, piano) hereda de la clase base InstrumentoMusical e implementa el método tocar_nota() según su naturaleza física única. Cuando el director solicita "tocar Do", está invocando el mismo método en objetos de diferentes clases, pero cada uno produce el sonido de manera distinta: el violín mediante cuerdas vibradas con un arco, la trompeta a través de vibraciones de aire en un tubo metálico, y el piano golpeando cuerdas con martillos.
 
