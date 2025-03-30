@@ -13,7 +13,8 @@ El paradigma estructurado se basa en la división del programa en procedimientos
 ## Los cuatro fundamentos de POO
 
 + **I. Encapsulación:** Ocultamiento de de detalles internos del objeto, exponiendo solo sus interfaces públicas, favoreciendo, así, la modularidad y la seguridad del sistema.
-*EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).*
+  
+  -*EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).*
 
  ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
 
