@@ -12,7 +12,7 @@
 
 ## Introducción
 
-## Resumen del proyecto
+### Resumen del proyecto
 Este repositorio contiene un sistema orientado a modernizar la administración de turnos en un centro de salud de pequeña escala.  
 La plataforma está diseñada para optimizar la organización de turnos, evitar superposiciones y otras fallas procedimentales, y mejorar la interacción entre pacientes y profesionales.
 
