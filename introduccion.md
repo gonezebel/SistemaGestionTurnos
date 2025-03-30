@@ -136,7 +136,9 @@ Postcondición: El paciente recibe el aviso a tiempo.
 
 ## Boceto inicial del diseño de clases
 
-![Ejemplo poliformismo](imagenes/03_diagrama_poliformismo.jpg)
+**Link Drawio:** https://drive.google.com/file/d/1vFd70BRh0BuMLam6-RxGJqXAKmhSRiL2/view?usp=sharing
+
+![Boceto diseño de clases](imagenes/04_clases_sistema_POO.jpg)
 
 
  
