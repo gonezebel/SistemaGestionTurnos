@@ -94,9 +94,9 @@ El paradigma estructurado se basa en la división del programa en procedimientos
 
 + **IV. Anular un turno programado**
  
- - *Actor(es):* Paciente, personal de atención al paciente
- - *Descripción:* El turno puede ser cancelado por el paciente o por el personal del centro de salud ante un imprevisto.
- - *Flujo principal:*
+  - *Actor(es):* Paciente, personal de atención al paciente
+  - *Descripción:* El turno puede ser cancelado por el paciente o por el personal del centro de salud ante un imprevisto.
+  - *Flujo principal:*
       a. El paciente o el personal elige el turno que desea cancelar desde la plataforma
       b. Confirma la anulación.
       c. El sistema informa al médico que ese horario ha quedado libre.
