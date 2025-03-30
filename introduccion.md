@@ -61,9 +61,9 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Personal de atención al paciente
   - *Descripción:* El personal carga la información de un paciente que aún no figura en la base.
   - *Flujo principal:*
-      a. Se accede al módulo de gestión de pacientes.
-      b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento,             tipo e identificación de cobertura de salud y datos de contacto.
-      c. Se guarda la información y se muestra un mensaje confirmando la operación.
+      * a. Se accede al módulo de gestión de pacientes.
+      * b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento,             tipo e identificación de cobertura de salud y datos de contacto.
+      * c. Se guarda la información y se muestra un mensaje confirmando la operación.
   - *Precondición:* El paciente no debe estar previamente registrado.
   - *Postcondición:* El paciente se agrega correctamente a la base de datos.
 
