@@ -24,14 +24,14 @@ El paradigma estructurado se basa en la división del programa en procedimientos
  
  ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
 
- ** III. Herencia: ** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
+ **III. Herencia:** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
 
  EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.
 
 ![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
 
 
- ** IV. Polimorfismo: **:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
+ **IV. Polimorfismo:**:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
 
  EJ: Los instrumentos musicales de una orquesta, donde cada instrumento (violín, trompeta, piano) hereda de la clase base InstrumentoMusical e implementa el método tocar_nota() según su naturaleza física única. Cuando el director solicita "tocar Do", está invocando el mismo método en objetos de diferentes clases, pero cada uno produce el sonido de manera distinta: el violín mediante cuerdas vibradas con un arco, la trompeta a través de vibraciones de aire en un tubo metálico, y el piano golpeando cuerdas con martillos.
 
