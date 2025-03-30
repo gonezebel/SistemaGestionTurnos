@@ -134,5 +134,9 @@ d) El paciente confirma asistencia o solicita cancelación.
 Precondición: Debe haber un turno programado.
 Postcondición: El paciente recibe el aviso a tiempo.
 
+## Boceto inicial del diseño de clases
+
+![Ejemplo poliformismo](imagenes/03_diagrama_poliformismo.jpg)
+
 
  
