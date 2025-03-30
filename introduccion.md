@@ -121,7 +121,7 @@ Postcondición: El turno se anula y se libera el espacio correspondiente en la a
 
 **V. Envío de recordatorios de turnos**
 
-Actor(es): Sistema (módulo de automatización de funciones), servidor de mail o mensajería instantánea.
+Actor(es): Gestor de turnos (módulo de automatización de funciones), servidor de mail o mensajería instantánea.
 
 Descripción: El sistema se encarga de recordar al paciente que tiene una cita próxima.
 
