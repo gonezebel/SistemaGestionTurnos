@@ -22,7 +22,7 @@ El paradigma estructurado se basa en la división del programa en procedimientos
 
 + **II. Abstracción:**  Simplificar la complejidad de los objetos reales modelando solo los aspectos esenciales relevantes para el sistema.
 
-  - EJ: El la utilización de un cajero automático por parte de un usuario. La máquina presenta solo funciones simples al usuario (retirar dinero, consultar saldo, transferir) mientras oculta toda la complejidad subyacente. El usuario no necesita entender los sistemas de autenticación, las consultas a bases de datos, los protocolos de comunicación interbancaria o los mecanismos de seguridad que operan tras cada botón que presiona.*
+  - *EJ: El la utilización de un cajero automático por parte de un usuario. La máquina presenta solo funciones simples al usuario (retirar dinero, consultar saldo, transferir) mientras oculta toda la complejidad subyacente. El usuario no necesita entender los sistemas de autenticación, las consultas a bases de datos, los protocolos de comunicación interbancaria o los mecanismos de seguridad que operan tras cada botón que presiona.*
 
     ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
 
