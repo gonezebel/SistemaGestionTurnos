@@ -8,7 +8,7 @@ Lo distintivo de la POO es la técnica de poner todos los atributos y métodos d
 
 **Diferencias entre la POO y el paradigma de programación estructural**
 
-El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que la POO se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. De esta forma, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales.
+El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que la POO se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. De esta forma, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales y facilitando su escalabilidad.
 
 ## Los cuatro fundamentos de POO
 
