@@ -10,64 +10,64 @@ Lo distintivo de la POO es la técnica de poner todos los atributos y métodos d
 
 El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que la POO se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. De esta forma, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales y facilitando su escalabilidad.
 
+
 ## Los cuatro fundamentos de POO
 
 + **I. Encapsulación:** Ocultamiento de de detalles internos del objeto, exponiendo solo sus interfaces públicas, favoreciendo, así, la modularidad y la seguridad del sistema.
   
   - *EJ: El control remoto es un objeto que encapsula toda su complejidad interna (circuitos, baterías, sensores infrarrojos) detrás de una interfaz simple (los botones).*
 
-       ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
-
-**II. Abstracción:**  Simplificar la complejidad de los objetos reales modelando solo los aspectos esenciales relevantes para el sistema.
-
- EJ: El la utilización de un cajero automático por parte de un usuario. La máquina presenta solo funciones simples al usuario (retirar dinero, consultar saldo, transferir) mientras oculta toda la complejidad subyacente. El usuario no necesita entender los sistemas de autenticación, las consultas a bases de datos, los protocolos de comunicación interbancaria o los mecanismos de seguridad que operan tras cada botón que presiona.
- 
- ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
-
- **III. Herencia:** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
-
- EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.
-
-![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
+    ![Ejemplo encapsulación](imagenes/00_diagrama_encapsulamiento.jpg)
 
 
- **IV. Polimorfismo:**:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
++ **II. Abstracción:**  Simplificar la complejidad de los objetos reales modelando solo los aspectos esenciales relevantes para el sistema.
 
- EJ: Los instrumentos musicales de una orquesta, donde cada instrumento (violín, trompeta, piano) hereda de la clase base InstrumentoMusical e implementa el método tocar_nota() según su naturaleza física única. Cuando el director solicita "tocar Do", está invocando el mismo método en objetos de diferentes clases, pero cada uno produce el sonido de manera distinta: el violín mediante cuerdas vibradas con un arco, la trompeta a través de vibraciones de aire en un tubo metálico, y el piano golpeando cuerdas con martillos.
+  - EJ: El la utilización de un cajero automático por parte de un usuario. La máquina presenta solo funciones simples al usuario (retirar dinero, consultar saldo, transferir) mientras oculta toda la complejidad subyacente. El usuario no necesita entender los sistemas de autenticación, las consultas a bases de datos, los protocolos de comunicación interbancaria o los mecanismos de seguridad que operan tras cada botón que presiona.*
 
-![Ejemplo poliformismo](imagenes/03_diagrama_poliformismo.jpg)
+    ![Ejemplo abstracción](imagenes/01_diagrama_abstracción.jpg)
+
+
++ **III. Herencia:** Permite que un objeto obtenga propiedades y comportamientos de otro objeto, a través de una jerarquía de clases, permitiendo la reutilización del código.
+
+  - *EJ: Los vehículos de transporte automotor representan un ejemplo herencia. Todos los vehículos comparten características comunes (motocicletas, automóviles, camiones, etc), pero cada tipo específico tiene sus propias peculiaridades.*
+
+    ![Ejemplo herencia](imagenes/02_diagrama_herencia.jpg)
+
+
++ **IV. Polimorfismo:**:  Capacidad de los objetos de una misma jerarquía de clases para responder de manera diferente a un mismo mensaje, permitiendo flexibilidad a través de código genérico.
+
+   - *EJ: Los instrumentos musicales de una orquesta, donde cada instrumento (violín, trompeta, piano) hereda de la clase base InstrumentoMusical e implementa el método tocar_nota() según su naturaleza física única. Cuando el director solicita "tocar Do", está invocando el mismo método en objetos de diferentes clases, pero cada uno produce el sonido de manera distinta: el violín mediante cuerdas vibradas con un arco, la trompeta a través de vibraciones de aire en un tubo metálico, y el piano golpeando cuerdas con martillos*
+
+    ![Ejemplo poliformismo](imagenes/03_diagrama_poliformismo.jpg)
 
 
 ## Requisitos iniciales del sistema
 
-**I. Protección de datos personales:** Solo el personal autorizado podrá acceder a los datos sensibles de contacto tanto de pacientes como de médicos, garantizando la privacidad.
++ **I. Protección de datos personales:** Solo el personal autorizado podrá acceder a los datos sensibles de contacto tanto de pacientes como de médicos, garantizando la privacidad.
 
-**II. Alta de pacientes y profesionales:**  El sistema brindará la posibilidad de incorporar nuevos registros de pacientes y médicos al sistema de forma sencilla y organizada.
++ **II. Alta de pacientes y profesionales:**  El sistema brindará la posibilidad de incorporar nuevos registros de pacientes y médicos al sistema de forma sencilla y organizada.
 
-**III. Distribución de turnos según disponibilidad:** La asignación de turnos se realizará teniendo en cuenta los horarios disponibles de cada profesional de la salud.
++ **III. Distribución de turnos según disponibilidad:** La asignación de turnos se realizará teniendo en cuenta los horarios disponibles de cada profesional de la salud.
 
-**IV. Visualización de agenda médica:** Cada médico podrá acceder a un calendario donde visualizará todos los turnos que tiene programados.
++ **IV. Visualización de agenda médica:** Cada médico podrá acceder a un calendario donde visualizará todos los turnos que tiene programados.
 
-**V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp a pacientes para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
++ **V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp a pacientes para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
 
 
 ## Casos de uso
 
++ **I. Registrar un paciente nuevo al sistema**
 
-**I. Registrar un paciente nuevo al sistema**
+  - *Actor(es):* Personal de atención al paciente
+  - *Descripción:* El personal carga la información de un paciente que aún no figura en la base.
 
-Actor(es): Personal de atención al paciente
+  - *Flujo principal:*
+      a. Se accede al módulo de gestión de pacientes.
+      b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento,             tipo e identificación de cobertura de salud y datos de contacto.
+      c. Se guarda la información y se muestra un mensaje confirmando la operación.
 
-Descripción: El personal carga la información de un paciente que aún no figura en la base.
-
-Flujo principal:
-a. Se accede al módulo de gestión de pacientes.
-b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento, tipo e identificación de cobertura de salud y datos de contacto.
-c. Se guarda la información y se muestra un mensaje confirmando la operación.
-
-Precondición: El paciente no debe estar previamente registrado.
-
-Postcondición: El paciente se agrega correctamente a la base de datos.
+  - *Precondición:* El paciente no debe estar previamente registrado.
+  - *Postcondición:* El paciente se agrega correctamente a la base de datos.
 
 
 **II. Registrar un nuevo profesional de la salud**
