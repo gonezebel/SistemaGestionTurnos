@@ -49,6 +49,7 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
 **V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
 
+
 ## Casos de uso
 
 
