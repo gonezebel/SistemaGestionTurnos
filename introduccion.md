@@ -8,9 +8,7 @@ Lo distintivo de la POO es la técnica de poner todos los atributos y métodos d
 
 **Diferencias entre la POO y el paradigma de programación estructural**
 
-i. Organización sistémica: El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que la POO se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. 
-
-ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición del sistema en funciones y procedimientos, la POO parte de la encapsulación de datos y comportamiento. Por otra parte, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales.
+El paradigma estructurado se basa en la división del programa en procedimientos y funciones independientes, con tareas específicas, mientras que la POO se organiza en torno a objetos que son instancias de clases que encapsulan datos y comportamientos relacionados. De esta forma, al crear objetos que contienen datos y código de programación, un cambio en un objeto tiene un impacto mínimo en otros objetos, lo que mejora el mantenimiento, asi como permite la reusabilidad de objetos, reduciendo los costos de desarrollo en sistemas computacionales.
 
 ## Los cuatro fundamentos de POO
 
@@ -50,7 +48,7 @@ ii. Diseño: Mientras que el modelo estructurado se centra en la descomposición
 
 **IV. Visualización de agenda médica:** Cada médico podrá acceder a un calendario donde visualizará todos los turnos que tiene programados.
 
-**V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
+**V. Avisos automáticos:** El sistema enviará comunicaciones por correo electrónico y/o mensajes de Whatsapp a pacientes para informar sobre confirmaciones, cancelaciones o cambios en los turnos.
 
 
 ## Casos de uso
