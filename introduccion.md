@@ -122,7 +122,7 @@ El paradigma estructurado se basa en la división del programa en procedimientos
 
 ## Boceto inicial del diseño de clases
 
-[**Link Drawio:**] (https://drive.google.com/file/d/1vFd70BRh0BuMLam6-RxGJqXAKmhSRiL2/view?usp=sharing)
+[**Link Drawio:**](https://drive.google.com/file/d/1vFd70BRh0BuMLam6-RxGJqXAKmhSRiL2/view?usp=sharing)
 
 ![Boceto diseño de clases](imagenes/04_clases_sistema_POO.jpg)
 
