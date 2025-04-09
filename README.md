@@ -24,4 +24,4 @@ La plataforma está diseñada para optimizar la organización de turnos, evitar 
 
 ## Diagramas y diseños
 
-!**[Anexos]**(anexos.md)
+**[Anexos]**(anexos.md)
