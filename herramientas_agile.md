@@ -2,4 +2,4 @@
 
 ## Tarjetas CRC
 
-● [Anexo 1 - Introducción al diseño orientado a objetos](introduccion.md)
+    ![Tarjeta Clase Persona](imagenes/00_diagrama_encapsulamiento.jpg)
