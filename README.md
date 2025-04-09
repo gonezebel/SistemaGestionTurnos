@@ -26,3 +26,4 @@ La plataforma está diseñada para optimizar la organización de turnos, evitar 
 
  + [Anexos](anexos.md)
  + [Diagramas UML](diagramasUML.md)
+ + [Herramientas Agile](herramientas_agile.md)
