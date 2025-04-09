@@ -2,7 +2,7 @@
 
 ## Tarjetas CRC
 
-![Link Plantilla Excel](plantillas/00_Plantilla CRC.xlsx)
+[Link Plantilla Excel](https://docs.google.com/spreadsheets/d/1KuODJVl_M1LPLMHcnLgc6_j3mVGJ47Kq/edit?usp=sharing&ouid=109477294990424102788&rtpof=true&sd=true)
 
 ![Tarjeta Clase Persona](imagenes/04_CRC_Persona.jpg)
 
