@@ -65,9 +65,15 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Personal de atención al paciente
   - *Descripción:* El personal carga la información de un paciente que aún no figura en la base.
   - *Flujo principal:*
-      * a. Se accede al módulo de gestión de pacientes.
-      * b. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento,             tipo e identificación de cobertura de salud y datos de contacto.
-      * c. Se guarda la información y se muestra un mensaje confirmando la operación.
+      * a. El personal inicia sesión en el sistema con credenciales con permisos suficientes para la acción.
+      * b. Navega al módulo de gestión de pacientes.
+      * c. Selecciona la opción "Registrar nuevo paciente".
+      * d. El sistema muestra un formulario con los campos requeridos.
+      * e. Se completan los campos con apellido y nombre, tipo y número de documento o identificación, fecha de nacimiento,             sexo, domicilio, datos fiscales, tipo e identificación de cobertura de salud y datos de contacto.
+      * f. El sistema verifica automáticamente que el paciente no exista previamente utilizando tipo y numero de documento.
+      * g. Si la verificación es exitosa, el personal hace clic en "Guardar".
+      * h. Se guarda la información y se muestra un mensaje confirmando la operación.
+      * i. El sistema ofrece opción para registrar otro paciente.
   - *Precondición:* El paciente no debe estar previamente registrado.
   - *Postcondición:* El paciente se agrega correctamente a la base de datos.
 
@@ -77,9 +83,17 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Personal administrativo, de recursos humanos o del sector con potestad para la tarea
   - *Descripción:* El personal autorizado ingresa los datos de un médico que comenzará a atender en el centro.
   - *Flujo principal:*
-      * a. Se accede al módulo de registro de profesionales.
-      * b. Se completan los campos obligatorios: nombre completo, especialidad, tipo y número de matrícula profesional y                datos de contacto.
-      * c. Se guarda el registro y se confirma la incorporación.
+      * a. El personal inicia sesión en el sistema con credenciales con permisos suficientes para la acción.
+      * b. Accede al módulo administrativo del sistema.
+      * c. Selecciona la opción "Gestión de profesionales".
+      * d. Elige "Registrar nuevo profesional".
+      * e. El sistema muestra un formulario con los campos requeridos.
+      * f. Se completan los campos obligatorios: nombre completo, tipo y numero de documento, fecha de nacimiento, sexo,     
+           domicilio, datos fiscales, especialidad, tipo y número de matrícula profesional, vigencia de matrícula y datos de            contacto.
+      * g. El sistema verifica que el profesional no exista previamente por tipo y numero de matricula y DNI.
+      * h. Si la verificación es exitosa, el personal hace clic en "Guardar".
+      * i. Se guarda la información y se muestra un mensaje confirmando la operación.
+      * j. El sistema permite cargar información administrativa relacioanda a pago de honorarios o ingresar otro médico.
   - *Precondiciones:* El médico no debe estar previamente cargado en el sistema.
   - *Postcondiciones:* El profesional queda disponible para la asignación de turnos y visible en la agenda médica.
 
@@ -89,9 +103,20 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Paciente, personal de atención al paciente
   - *Descripción:* Se agenda una consulta para un paciente, respetando la disponibilidad del profesional.
   - *Flujo principal:*
-      * a. Se elige al paciente y al médico.
-      * b. Se selecciona una fecha y hora dentro del horario libre del médico.
-      * c. Se confirma el turno y se informa al paciente.
+      * a. El personal o paciente inicia sesión en el sistema.
+      * b. Accede al módulo de "Gestión de turnos".
+      * c. Selecciona "Agendar nuevo turno".
+      * d. El sistema solicita identificar al paciente por DNI.
+      * e. Una vez identificado el paciente, el sistema muestra sus datos básicos y cobertura.
+      * f. El usuario selecciona el profesional mediante busqueda por nombre, especialidad y horarios disponibles.
+      * g. El sistema muestra la disponibilidad del profesional.
+      * h. El usuario selecciona fecha y hora disponibles.
+      * i. El sistema verifica requisitos adicionales para el turno (Autorizaciones, prescripciones, estudios previos)
+      * j. En caso de requerir autorización solicita token.
+      * k. El sistema y el validador de la cobertura aprueban o no el token.
+      * l. En caso afirmativo, se permite registrar información adicional como sintomas, motivos, aclaraciones.
+      * m. El usuario confirma el turno.
+      * n. Se registra el turno en la base con código único de turno, se bloquea la agenda y se genera comprobante de turno.
   - *Precondición:* El profesional debe tener disponibilidad en el horario elegido y el paciente debe cumplimentar posibles                      prescripciones médicas aplicables así como también validacion de cobertura (incluyendo verificación de                       token de autorización).
   - *Postcondición:* El turno queda registrado y se envía un aviso correspondiente.
 
@@ -101,9 +126,24 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Paciente, personal de atención al paciente
   - *Descripción:* El turno puede ser cancelado por el paciente o por el personal del centro de salud ante un imprevisto.
   - *Flujo principal:*
-      * a. El paciente o el personal elige el turno que desea cancelar desde la plataforma
-      * b. Confirma la anulación.
-      * c. El sistema informa al médico que ese horario ha quedado libre.
+      * a. El paciente o personal inicia sesión en el sistema.
+      * b. Accede al módulo "Gestión de turnos".
+      * c. Selecciona "Consultar/Modificar turnos".
+      * d. El sistema solicita identificación:
+                Para paciente: documento o código de paciente
+                Para personal: datos del paciente o código de turno
+      * e. El sistema muestra la lista de turnos vigentes.
+      * f. El usuario selecciona el turno a cancelar.
+      * g. El sistema muestra los detalles completos del turno.
+      * h. El usuario selecciona "Anular turno".
+      * i. El sistema solicita el motivo de cancelación con opciones.
+      * j. El usuario completa el motivo de cancelación.
+      * k. El sistema verifica la política de cancelación en cuanto a tiempos de anticipacion y posibles penalidades.
+      * l. El usuario confirma la anulación.
+      * m. El sistema Actualiza el estado del turno a "Cancelado", libera la agenda del médico, registra la fecha y hora de             anulación y el motivo.
+      * n. El sistema envía notificaciones al médico, al paciente y al área administrativa.
+      * ñ. El sistema ofrece la opción de reprogramar o finalizar la gestión.
+
   - *Precondición:* El turno debe estar vigente.
   - *Postcondición:* El turno se anula y se libera el espacio correspondiente en la agenda.
 
@@ -113,10 +153,14 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Actor(es):* Gestor de turnos (módulo de automatización de funciones), servidor de mail o mensajería instantánea.
   - *Descripción:* El sistema se encarga de recordar al paciente que tiene una cita próxima.
   - *Flujo principal:*
-      * a. El sistema revisa la agenda.
-      * b. Si hay una consulta próxima, envía un mensaje por correo electrónico o mensaje de Whatsapp.
-      * c. El paciente recibe la notificación
-      * d. El paciente confirma asistencia o solicita cancelación.
+      * a. El módulo de gestión de recordatorios se activa automáticamente según programación.
+      * b. El sistema consulta la base de datos de turnos programados.
+      * c. Identifica los turnos próximos según reglas predefinidas.
+      * d. Para cada turno identificado recupera los datos y referencia de contacto del paciente.
+      * e. El sistema genera el contenido personalizado del recordatorio.
+      * f. Envía un mensaje por correo electrónico o mensaje de Whatsapp.
+      * g. El paciente recibe la notificación
+      * h. El paciente confirma asistencia o solicita cancelación.
   - *Precondición:* Debe haber un turno programado.
   - *Postcondición:* El paciente recibe el aviso a tiempo.
 
