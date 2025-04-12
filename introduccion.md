@@ -163,6 +163,37 @@ El paradigma estructurado se basa en la división del programa en procedimientos
       * h. El paciente confirma asistencia o solicita cancelación.
   - *Precondición:* Debe haber un turno programado.
   - *Postcondición:* El paciente recibe el aviso a tiempo.
+ 
++ **VI. Crear Agenda para un Médico**
+
+  - *Actor(es):* Personal administrativo, Coordinador médico, Profesional de la salud
+  - *Descripción:* Se configura la disponibilidad del profesional médico en el sistema, estableciendo días, horarios,     
+     duración de turnos y consultorio asignado para la atención de pacientes.
+  - *Flujo principal:*
+      * a. El personal autorizado inicia sesión en el sistema con credenciales válidas.
+      * b. Navega al módulo de "Gestión de agenda médica".
+      * c. Selecciona la opción "Crear/Configurar agenda".
+      * d. El sistema solicita identificar al profesional mediante DNI, nombre y apellido o número de matrícula.
+      * e. Una vez identificado el profesional, el sistema muestra sus datos básicos.
+      * f. El usuario selecciona el período de configuración de agenda: Fecha de inicio, fecha de finalización (opcional),              frecuencia de repetición, con restricciones de los horarios comerciales del centro de salud y los horarios de                contrato del profesional de la salud.
+      * g. El usuario asigna el consultorio para cada día de atención mediante la disponibilidad existente y las             
+           restricciones físicas o comerciales que disponga el centro de salud.
+      * h. En base al estandar de tiempos de atención por especialidad configurado previamente, el sistema calcula la                   cantidad de turnos disponibles en el rango horario configurado cada dia.
+      * i. El sistema solicita configuración de excepciones como vacaciones, feriados, licencias, entre otras.
+      * j. El usuario establece reglas específicas de agenda como cantidad permitida de sobreturnos, restricciones de                   atención por cada tipo de cobertura de salud, entre otras.
+      * k. El usuario confirma la creación de la agenda.
+      * l. El sistema muestra un resumen de la agenda creada con datos principales.
+      * m. El sistema ofrece opciones para imprimir resumen de agenda, enviar detalle al profesional por correo, registrar              otra agenda o volver al menú principal.
+  - *Precondición:*
+        i.  El profesional debe estar correctamente registrado en el sistema.
+        ii. El usuario debe tener permisos para gestionar agendas médicas.
+        iii.Los consultorios deben estar previamente configurados en el sistema.
+  - *Postcondición:*
+        i.  El paciente recibe el aviso a tiempo.
+        ii. Los horarios definidos quedan disponibles para asignación de turnos.
+        iii.El consultorio queda reservado para el profesional en los días y horarios establecidos.
+        iv. El sistema habilita la visualización de la disponibilidad para el personal de turnos.
+      
 
 ## Boceto inicial del diseño de clases
 
