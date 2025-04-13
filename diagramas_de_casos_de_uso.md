@@ -4,6 +4,6 @@
 
      ![CasoUSo1](imagenes/012_CasoUso_PacienteNuevo_UML.jpg)
 
-      * [**Caso de Uso 2 - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1gqbKxbKr99smZwZoad9d3zYGZxz_ZBoZ/view?usp=sharing)
+      * [**Caso de Uso 2 - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1IEqID8MmNIqJDLiXWrhqr4Q18oNPFC_F/view?usp=sharing)
 
      ![CasoUSo1](imagenes/012_CasoUso_PacienteNuevo_UML.jpg)
