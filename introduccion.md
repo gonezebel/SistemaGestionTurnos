@@ -164,7 +164,7 @@ El paradigma estructurado se basa en la división del programa en procedimientos
   - *Precondición:* Debe haber un turno programado.
   - *Postcondición:* El paciente recibe el aviso a tiempo.
  
-+ **VI. Crear Agenda para un Médico**
++ **VI. Crear Agenda para un profesional**
 
   - *Actor(es):* Personal administrativo, Coordinador médico, Profesional de la salud
   - *Descripción:* Se configura la disponibilidad del profesional médico en el sistema, estableciendo días, horarios,     
