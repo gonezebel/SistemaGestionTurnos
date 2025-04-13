@@ -7,3 +7,7 @@
       * [**Caso de Uso 2 - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1IEqID8MmNIqJDLiXWrhqr4Q18oNPFC_F/view?usp=sharing)
 
      ![CasoUSo1](imagenes/013_CasoUso_AltaProfesional.jpg)
+
+      * [**Caso de Uso 3 - Asignar un turno con un médico para un paciente**](https://drive.google.com/file/d/1IEqID8MmNIqJDLiXWrhqr4Q18oNPFC_F/view?usp=sharing)
+
+     ![CasoUSo1](imagenes/013_CasoUso_AltaProfesional.jpg)
