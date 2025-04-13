@@ -23,8 +23,7 @@
      ![CasoUSo1](imagenes/016_CasoUso_RecordatorioTurnos.jpg)
 
 
-  * [**Caso de Uso 6 - Crear Agenda para un profesional**]
-(https://drive.google.com/file/d/13YnIRvslD2gM2JxfGcTzWoj-Gd7qL1sQ/view?usp=sharing)
+  * [**Caso de Uso 6 - Crear Agenda para un profesional**](https://drive.google.com/file/d/1xHGw4QJWWgKjbSaHfOaVW_STKFFeI70A/view?usp=sharing)
 
      ![CasoUSo1](imagenes/014_CasoUso_AsignarTurno.jpg)
 
