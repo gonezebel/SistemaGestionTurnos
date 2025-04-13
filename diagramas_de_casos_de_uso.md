@@ -19,8 +19,7 @@
      ![CasoUSo1](imagenes/015_CasoUso_AnularTurno.jpg)
 
 
-  * [**Caso de Uso 5 - Envío de recordatorios de turnos**]
-(https://drive.google.com/file/d/1iOY2gqar2242Mdg2wQM0gBTlMssjwujO/view?usp=sharing)
+  * [**Caso de Uso 5 - Envío de recordatorios de turnos**(https://drive.google.com/file/d/1iOY2gqar2242Mdg2wQM0gBTlMssjwujO/view?usp=sharing)
 
      ![CasoUSo1](imagenes/014_CasoUso_AsignarTurno.jpg)
 
