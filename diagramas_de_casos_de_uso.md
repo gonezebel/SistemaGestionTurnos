@@ -25,6 +25,6 @@
 
   * [**Caso de Uso 6 - Crear Agenda para un profesional**](https://drive.google.com/file/d/1xHGw4QJWWgKjbSaHfOaVW_STKFFeI70A/view?usp=sharing)
 
-     ![CasoUSo1](imagenes/014_CasoUso_AsignarTurno.jpg)
+     ![CasoUSo1](imagenes/017_CasoUso_CrearAgenda.jpg)
 
     
