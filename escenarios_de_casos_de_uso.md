@@ -10,5 +10,5 @@
 
   * [**Caso de Uso 5: Envío de recordatorios de turnos - Escenario envío exitoso de recordatorio**](https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3-xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/edit?gid=94447435#gid=94447435)
 
-  * [**Caso de Uso 6 - Escenario crear Agenda para un profesional**](https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3-xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/edit?gid=1052671722#gid=1052671722)
+  * [**Caso de Uso 6: Crear Agenda para un profesional - Escenario creación exitosa de agenda**](https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3-xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/edit?gid=1052671722#gid=1052671722)
 
