@@ -1,1 +1,5 @@
-# Principio de Abierto/Cerrado (OCP) 
+# Principio de Abierto/Cerrado (OCP)
+
+## Motivación
+
+## Estructura de Clases
