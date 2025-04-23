@@ -14,5 +14,6 @@ Por ejemplo:
   
 # Estructura de Clases 
 
- ![Ejemplo ISP](imagenes/021_Parcial_1_SOLID_ISP.jpg)
- * [Link drawio](https://drive.google.com/file/d/1bpLAHIN75-rAq2f_ZS1Fsg5ckWt631E_/view?usp=sharing)
+[Link drawio](https://drive.google.com/file/d/1bpLAHIN75-rAq2f_ZS1Fsg5ckWt631E_/view?usp=sharing)
+![Ejemplo ISP](imagenes/021_Parcial_1_SOLID_ISP.jpg)
+
