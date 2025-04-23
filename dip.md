@@ -9,7 +9,9 @@ En el sistema de gestión de turnos, por ejemplo, si el componente de gestión d
 * Realizar pruebas unitarias aisladas: Cambiar entre diferentes implementaciones (por ejemplo, pasar de notificaciones por email a notificaciones por app).
 * Mantener y evolucionar el sistema de forma independiente.
 
-## Estructura de Clases 
+El diseño original sufría de rigidez debido a que el gestor de turnos dependía directamente de implementaciones específicas de notificación. Aplicando el principio DIP, se introdujo la interfaz IServicioNotificacion como abstracción intermedia, permitiendo que el gestor de turnos trabaje con cualquier implementación de notificación (Email, SMS, WhatsApp) sin conocer sus detalles internos, lo que facilita la adaptación a nuevos requisitos y la implementación de pruebas sin modificar componentes existentes.
 
- ![Ejemplo ISP](imagenes/022_Parcial_1_SOLID_DIP.jpg)
+## Estructura de Clases 
  * [Link drawio](https://drive.google.com/file/d/1wYh8ik2u8-rpyEPE5HFxtHsch7Rd-3iY/view?usp=sharing)
+ ![Ejemplo ISP](imagenes/022_Parcial_1_SOLID_DIP.jpg)
+
