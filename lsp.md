@@ -20,5 +20,5 @@ Por ejemplo:
 
 ## Estructura de Clases 
  
- ![Ejemplo LSP](imagenes/020_Parcial_1_SOLID_LSP.jpg)
+ ![Ejemplo LSP](imagenes/020_Parcial_1_SOLID_LSP_.jpg)
  * [Link drawio](https://drive.google.com/file/d/1G9xnnU522INfkFLSaW0FNrvK4YuNtFjL/view?usp=sharing)
