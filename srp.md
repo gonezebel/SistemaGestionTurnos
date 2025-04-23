@@ -23,5 +23,5 @@ En un escenario real, esto equivaldría a tener un único empleado que redacta m
 ## Estructura de Clases 
 
  ![Ejemplo srp](imagenes/018_SOLID_SRP.jpg)
- * [Link srp](https://drive.google.com/file/d/1Hv9hF0RbSZp7Z3l3Hp_q-i7rDVaMNCo3/view?usp=sharing)
+ * [Link drawio](https://drive.google.com/file/d/1Hv9hF0RbSZp7Z3l3Hp_q-i7rDVaMNCo3/view?usp=sharing)
 
