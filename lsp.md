@@ -6,7 +6,7 @@ En el concepto de contratos, el LSP también establece que las precondiciones no
 
 Es posible aplicar este principio a la jerarquía entre las clases Persona, Paciente y Profesional, garantizando que ambos puedan usarse indistintamente como Persona sin afectar la lógica general del sistema. El mal uso de la herencia puede romper este principio si alguna subclase no cumple con los contratos esperados por su clase base.
 
-# Motivación 
+## Motivación 
  
 En el diseño original, Persona define atributos comunes como nombre, apellido, DNI y contacto, y se espera que sus subclases respeten ese contrato básico. Sin embargo, si Paciente o Profesional sobrescriben comportamientos o agregan restricciones que contradicen o ignoran las expectativas definidas en Persona, se rompe el principio de sustitución. Para respetar el LSP, cuando reemplazamos un objeto Persona por un objeto Paciente o Profesional, el sistema debe seguir funcionando correctamente.
 
@@ -18,7 +18,7 @@ Por ejemplo:
   
 * III. Si la clase Profesional cambia este formato añadiendo su matrícula, podría confundir a partes del sistema que esperan solo el nombre civil.
 
-# Estructura de Clases 
+## Estructura de Clases 
  
  ![Ejemplo LSP](imagenes/020_Parcial_1_SOLID_LSP.jpg)
  * [Link drawio](https://drive.google.com/file/d/1G9xnnU522INfkFLSaW0FNrvK4YuNtFjL/view?usp=sharing)
