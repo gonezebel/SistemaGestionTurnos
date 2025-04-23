@@ -13,8 +13,8 @@ En el diseño original, la clase Paciente tiene múltiples responsabilidades:
 
 Esta concentración de responsabilidades puede ocasionar problemas como:
 
-  ! Si cambia la lógica de gestión de turnos, debemos modificar la clase Paciente
-  ! Si cambia el sistema de coberturas médicas, también debemos modificar Paciente
-  ! Si cambia cómo se accede a las prescripciones, nuevamente debemos modificar la misma clase
+  ++ Si cambia la lógica de gestión de turnos, debemos modificar la clase Paciente
+  ++ Si cambia el sistema de coberturas médicas, también debemos modificar Paciente
+  ++ Si cambia cómo se accede a las prescripciones, nuevamente debemos modificar la misma clase
 
 ## Estructura de Clases 
