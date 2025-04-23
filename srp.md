@@ -4,17 +4,21 @@ El SRP establece que una clase debe tener una única razón para cambiar, es dec
 
 ## Motivación
 
-En el diseño original, la clase Paciente tiene múltiples responsabilidades:
+En el diseño original, la clase Notificación podría tener múltiples responsabilidades:
 
-  + Almacenar información personal (heredada de Persona)
-  + Gestionar sus propios turnos (solicitar, confirmar, cancelar)
-  + Consultar su historial de prescripciones
-  + Manejar su información de cobertura médica
+  * Crear el contenido del mensaje
+  * Determinar el canal de comunicación (email, Whatsapp, etc)
+  * Enviar la notificación
+  * Registrar el estado de envío
+  * Programar recordatorios
 
-Esta concentración de responsabilidades puede ocasionar problemas como:
+Esto viola el SRP porque la clase tiene múltiples razones para cambiar:
 
-  + Si cambia la lógica de gestión de turnos, debemos modificar la clase Paciente
-  + Si cambia el sistema de coberturas médicas, también debemos modificar Paciente
-  + Si cambia cómo se accede a las prescripciones, nuevamente debemos modificar la misma clase
+  * Si cambiamos el formato de los mensajes, debemos modificar la clase
+  * Si añadimos un nuevo canal de comunicación, debemos modificar la clase
+  * Si cambiamos la forma de registrar los envíos, debemos modificar la misma clase
+
+En un escenario real, esto equivaldría a tener un único empleado que redacta mensajes, maneja el sistema de emails, gestiona Whatsapp, y también actualiza el registro de comunicaciones, siendo demasiadas responsabilidades para una función.
 
 ## Estructura de Clases 
+
