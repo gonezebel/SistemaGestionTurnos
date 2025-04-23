@@ -5,12 +5,12 @@ Es posible aplicar este principio a la jerarquía de clases relacionadas con los
  
 # Motivación 
 
-En el diseño original, podríamos tener una única interfaz ServicioMedico con todos los métodos posibles que cualquier profesional de la salud podría realizar. Sin embargo, esto obligaría a cada especialista a implementar métodos irrelevantes para su función. Para respetar el ISP, debemos dividir esta interfaz general en interfaces más pequeñas y cohesivas que reflejen las capacidades específicas de los diferentes tipos de profesionales.
+En el diseño original, podríamos tener una única interfaz ServicioMedico con todos los métodos posibles que cualquier profesional de la salud podría realizar. Sin embargo, ésto obligaría a cada especialista a implementar métodos irrelevantes para su función. Para respetar el ISP, debemos dividir esta interfaz general en interfaces más pequeñas y cohesivas que reflejen las capacidades específicas de los diferentes tipos de profesionales.
 
 Por ejemplo:
- + I. Un Medico Clínico necesita realizar consultas y prescribir medicamentos, pero no necesita interpretar imágenes radiológicas.
-+ II. Un Técnico/Médico Radiólogo necesita interpretar imágenes diagnósticas, pero no necesita diseñar planes de fisioterapia.
-+ III. Un Fisioterapeuta necesita realizar terapias físicas y diseñar planes de rehabilitación, pero no necesita prescribir medicamentos.
++ Un medico clínico necesita realizar consultas y prescribir medicamentos, pero no necesita interpretar imágenes radiológicas.
++ Un técnico/médico radiólogo necesita interpretar imágenes diagnósticas, pero no necesita diseñar planes de fisioterapia.
++ Un fisioterapeuta necesita realizar terapias físicas y diseñar planes de rehabilitación, pero no necesita prescribir medicamentos.
   
 # Estructura de Clases 
 
