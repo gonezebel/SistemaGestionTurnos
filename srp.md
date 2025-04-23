@@ -22,3 +22,4 @@ En un escenario real, esto equivaldría a tener un único empleado que redacta m
 
 ## Estructura de Clases 
 
+imagenes/018_SOLID_SRP.jpg
