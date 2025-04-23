@@ -23,4 +23,4 @@ Sin aplicar OCP, tendríamos una clase turno monolítica que contendría condici
 ## Estructura de Clases
 
  ![Ejemplo ocp](imagenes/019_Parcial_1_SOLID_OCP.jpg)
- * [Link srp](https://drive.google.com/file/d/1R1WujRBbFwS2cII3Ohx8CVwmzr9upmUp/view?usp=sharing)
+ * [Link drawio](https://drive.google.com/file/d/1R1WujRBbFwS2cII3Ohx8CVwmzr9upmUp/view?usp=sharing)
