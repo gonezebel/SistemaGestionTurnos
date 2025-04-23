@@ -12,11 +12,11 @@ En el diseño original, Persona define atributos comunes como nombre, apellido, 
 
 Por ejemplo:
 
-* I. Si cualquier parte del sistema llama a getContacto() en una Persona, espera recibir información de contacto válida. Una       clase Paciente que devuelva null o lance una excepción rompería esta expectativa.
+* Si cualquier parte del sistema llama a getContacto() en una Persona, espera recibir información de contacto válida. Una       clase Paciente que devuelva null o lance una excepción rompería esta expectativa.
   
-* II. Si el sistema muestra el nombre completo de una Persona para identificación, espera un formato estándar (nombre     apellido).
+* Si el sistema muestra el nombre completo de una Persona para identificación, espera un formato estándar (nombre     apellido).
   
-* III. Si la clase Profesional cambia este formato añadiendo su matrícula, podría confundir a partes del sistema que esperan solo el nombre.
+* Si la clase Profesional cambia este formato añadiendo su matrícula, podría confundir a partes del sistema que esperan solo el nombre.
 
 ## Estructura de Clases 
  
