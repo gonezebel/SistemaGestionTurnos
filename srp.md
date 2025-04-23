@@ -2,6 +2,8 @@
 
 El SRP, basado en el principio de cohesión de Tom Demarco, establece que una clase debe tener una única razón para cambiar, es decir, una sola responsabilidad bien definida. Esta definición implica limitar el impacto de los cambios en el sistema, haciendolos mas fácil de implementar, dado que al darse clases claramente definidas se minimizan los efectos colaterales en otras ("acople").
 
+Es posible aplicar este principio a la clase Notificación, la cual, en el diseño previo, posee varias responsabilidades relacionadas a la función de mensajería, generando alto acoplamiento y bajo mantenimiento al tornarse propensa a errores ante cualquier ajuste.
+
 ## Motivación
 
 En el diseño original, la clase Notificación podría tener múltiples responsabilidades:
