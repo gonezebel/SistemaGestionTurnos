@@ -1,6 +1,6 @@
 # Principio de Responsabilidad Única (SRP)
 
-El SRP establece que una clase debe tener una única razón para cambiar, es decir, una sola responsabilidad bien definida. Esta definición implica limitar el impacto de los cambios en el sistema, haciendolos mas fácil de implementar, dado que al darse clases claramente definidas se minimizan los efectos colaterales en otras.
+El SRP establece que una clase debe tener una única razón para cambiar, es decir, una sola responsabilidad bien definida. Esta definición implica limitar el impacto de los cambios en el sistema, haciendolos mas fácil de implementar, dado que al darse clases claramente definidas se minimizan los efectos colaterales en otras ("acople").
 
 ## Motivación
 
