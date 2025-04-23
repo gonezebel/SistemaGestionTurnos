@@ -11,5 +11,5 @@ En el sistema de gestión de turnos, por ejemplo, si el componente de gestión d
 
 ## Estructura de Clases 
 
- ![Ejemplo ISP](imagenes/021_Parcial_1_SOLID_ISP.jpg)
- * [Link drawio](https://drive.google.com/file/d/1bpLAHIN75-rAq2f_ZS1Fsg5ckWt631E_/view?usp=sharing)
+ ![Ejemplo ISP](imagenes/022_Parcial_1_SOLID_DIP.jpg)
+ * [Link drawio](https://drive.google.com/file/d/1wYh8ik2u8-rpyEPE5HFxtHsch7Rd-3iY/view?usp=sharing)
