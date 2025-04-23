@@ -16,7 +16,7 @@ Por ejemplo:
   
 * II. Si el sistema muestra el nombre completo de una Persona para identificación, espera un formato estándar (nombre     apellido).
   
-* III. Si la clase Profesional cambia este formato añadiendo su matrícula, podría confundir a partes del sistema que esperan solo el nombre civil.
+* III. Si la clase Profesional cambia este formato añadiendo su matrícula, podría confundir a partes del sistema que esperan solo el nombre.
 
 ## Estructura de Clases 
  
