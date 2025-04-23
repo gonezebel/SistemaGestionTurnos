@@ -18,7 +18,7 @@ En un centro médico, existen diferentes tipos de turnos que requieren informaci
   - Un sobreturno puede poseer diferentes restricciones
   - Un turno urgente o de demanda espontánea por ciertas características de los síntomas del paciente puede requerir otro         tipo de prioridades.
 
-Sin aplicar OCP, tendríamos una clase turno monolítica que contendría condicionales para manejar cada especialidad, haciendo que cada nueva especialidad requiriera modificar la clase existente.
+Sin aplicar OCP, tendríamos una clase turno monolítica que contendría condicionales para manejar cada especialidad, haciendo que, al agregarse una nueva, se requiera modificar la clase existente.
 
 ## Estructura de Clases
 
