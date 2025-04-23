@@ -13,3 +13,6 @@ Por ejemplo:
 + III. Un Fisioterapeuta necesita realizar terapias físicas y diseñar planes de rehabilitación, pero no necesita prescribir medicamentos.
   
 # Estructura de Clases 
+
+ ![Ejemplo ISP](imagenes/021_Parcial_1_SOLID_ISP.jpg)
+ * [Link drawio](https://drive.google.com/file/d/1bpLAHIN75-rAq2f_ZS1Fsg5ckWt631E_/view?usp=sharing)
