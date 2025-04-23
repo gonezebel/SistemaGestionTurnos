@@ -5,7 +5,7 @@ Es posible aplicar este principio a la jerarquía de clases relacionadas con los
  
 # Motivación 
 
-En el diseño original, podríamos tener una única interfaz ServicioMedico con todos los métodos posibles que cualquier profesional de la salud podría realizar. Sin embargo, esto obligaría a cada especialista a implementar métodos irrelevantes para su función.Para respetar el ISP, debemos dividir esta interfaz general en interfaces más pequeñas y cohesivas que reflejen las capacidades específicas de los diferentes tipos de profesionales.
+En el diseño original, podríamos tener una única interfaz ServicioMedico con todos los métodos posibles que cualquier profesional de la salud podría realizar. Sin embargo, esto obligaría a cada especialista a implementar métodos irrelevantes para su función. Para respetar el ISP, debemos dividir esta interfaz general en interfaces más pequeñas y cohesivas que reflejen las capacidades específicas de los diferentes tipos de profesionales.
 
 Por ejemplo:
  + I. Un Medico Clínico necesita realizar consultas y prescribir medicamentos, pero no necesita interpretar imágenes radiológicas.
