@@ -8,6 +8,6 @@
 
   * [**Diagrama de Actividad - Anular un turno programado**](https://drive.google.com/file/d/1pKgZVJU9QpwjM34nGT-9lU2se_ls8yxX/view?usp=sharing)
 
-  * [**Caso de Uso 5 - Envío de recordatorios de turnos**](https://drive.google.com/file/d/1iOY2gqar2242Mdg2wQM0gBTlMssjwujO/view?usp=sharing)
+  * [**Diagrama de Actividad - Envío de recordatorios de turnos**](https://drive.google.com/file/d/15RsVmkJqSjSR9LedOBzsLmTkfILIiMux/view?usp=sharing)
 
   * [**Caso de Uso 6 - Crear Agenda para un profesional**](https://drive.google.com/file/d/1xHGw4QJWWgKjbSaHfOaVW_STKFFeI70A/view?usp=sharing)
