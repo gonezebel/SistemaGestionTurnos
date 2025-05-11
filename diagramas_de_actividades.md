@@ -10,4 +10,4 @@
 
   * [**Diagrama de Actividad - Envío de recordatorios de turnos**](https://drive.google.com/file/d/15RsVmkJqSjSR9LedOBzsLmTkfILIiMux/view?usp=sharing)
 
-  * [**Caso de Uso 6 - Crear Agenda para un profesional**](https://drive.google.com/file/d/1xHGw4QJWWgKjbSaHfOaVW_STKFFeI70A/view?usp=sharing)
+  * [**Diagrama de Actividad - Crear Agenda para un profesional**](https://drive.google.com/file/d/195fuMYYgbR4TpGbgvs5OXzhnHFEhIc4v/view?usp=sharing)
