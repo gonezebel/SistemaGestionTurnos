@@ -6,6 +6,6 @@
 
 * [**Diagrama de Secuencia - Asignar un turno nuevo a paciente con profesional -  Reserva exitosa de turno nuevo por parte de paciente**](https://drive.google.com/file/d/1sgh7gPP7WAsvy7t68yYCsdSQ8cM0FQO6/view?usp=sharing)
 
-● Diagrama de Secuencia - Nombre del Caso de Uso 1 - Nombre del Escenario de Caso de Uso que se representa en diagrama de secuencia
+* [**Diagrama de Secuencia - Anular un turno programado -  Anulación exitosa de turno por parte de paciente**](https://drive.google.com/file/d/1kpP2ncHYi-wML5cNha9B2J5uFd8EJSz6/view?usp=sharing)
 
 ● Diagrama de Secuencia - Nombre del Caso de Uso 1 - Nombre del Escenario de Caso de Uso que se representa en diagrama de secuencia
