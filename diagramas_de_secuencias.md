@@ -8,4 +8,6 @@
 
 * [**Diagrama de Secuencia - Anular un turno programado -  Anulación exitosa de turno por parte de paciente**](https://drive.google.com/file/d/1kpP2ncHYi-wML5cNha9B2J5uFd8EJSz6/view?usp=sharing)
 
-● Diagrama de Secuencia - Nombre del Caso de Uso 1 - Nombre del Escenario de Caso de Uso que se representa en diagrama de secuencia
+* [**Diagrama de Secuencia - Envío de recordatorios de turnos -  Envío exitoso de recordatorio de turno a pacientes**](https://drive.google.com/file/d/13oaHiB7_uXApEts6m_NTnVnddOoqUor-/view?usp=sharing)
+
+* * [**Diagrama de Secuencia - Envío de recordatorios de turnos -  Envío exitoso de recordatorio de turno a pacientes**]
