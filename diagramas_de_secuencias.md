@@ -1,4 +1,4 @@
-# Diagramas de Actividades
+# Diagramas de Secuencias
 
 * [**Diagrama de Secuencia - Registrar un paciente nuevo al sistema -  Registro exitoso de nuevo paciente por parte de personal de atención**](https://drive.google.com/file/d/1PsZVVOelcJK3AfCgUnEkJgZL_VuMRAvL/view?usp=sharing)
 
