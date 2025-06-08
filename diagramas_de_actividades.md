@@ -6,7 +6,7 @@
 
   * [**Diagrama de Actividad - Asignar un turno con un médico para un paciente**](https://drive.google.com/file/d/1ou_pH11R-E6gmtLoGa8FxsoyIPpAbRL-/view?usp=sharing)
 
-  * [**Diagrama de Actividad - Anular un turno programado**](https://drive.google.com/file/d/1pKgZVJU9QpwjM34nGT-9lU2se_ls8yxX/view?usp=sharing)
+  * [**Diagrama de Actividad - Anular un turno programado por solicitud de paciente**](https://drive.google.com/file/d/1pKgZVJU9QpwjM34nGT-9lU2se_ls8yxX/view?usp=sharing)
 
   * [**Diagrama de Actividad - Envío de recordatorios de turnos**](https://drive.google.com/file/d/15RsVmkJqSjSR9LedOBzsLmTkfILIiMux/view?usp=sharing)
 
