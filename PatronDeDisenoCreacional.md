@@ -27,19 +27,19 @@ El centro de salud necesita digitalizar su sistema de turnos que actualmente man
 
 #### Clases del problema original:
 
-+ GestorTurnos: Maneja la lógica de negocio de los turnos
-+ Turno: Entidad que representa un turno médico
-+ Paciente y Profesional: Entidades que necesitan recibir notificaciones
++ **GestorTurnos:** Maneja la lógica de negocio de los turnos
++ **Turno:** Entidad que representa un turno médico
++ **Paciente y Profesional:** Entidades que necesitan recibir notificaciones
 
 ##### Limitaciones del enfoque original:
 Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notificación y contener lógica condicional para decidir cómo enviar cada tipo de mensaje, violando el principio de responsabilidad única y el principio abierto/cerrado.
 
 #### Nuevas clases incorporadas con Factory Method:
 
-+ Notificacion (Clase abstracta)
- ++ Función: Define la interfaz común para crear notificaciones
- ++ Método clave: crearNotificacion() - método factory que las subclases deben implementar
- ++ Responsabilidad: Encapsula la lógica común de envío de notificaciones
++ **Notificacion (Clase abstracta)**
+ ! **Función:** Define la interfaz común para crear notificaciones
+ ! Método clave: crearNotificacion() - método factory que las subclases deben implementar
+ ! Responsabilidad: Encapsula la lógica común de envío de notificaciones
 
 + EmailNotification
  ++ Función: Factory concreto para crear notificaciones por email
