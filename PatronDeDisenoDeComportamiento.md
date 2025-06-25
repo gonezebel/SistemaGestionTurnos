@@ -94,45 +94,35 @@ Sin State, la clase Turno tendría:
       * *finalizar(): Válido, transiciona a EstadoFinalizado*
       * *registrarObservaciones(): Válido y específico de este estado*
 
++ **EstadoFinalizado (Implementa EstadoTurno)**
+  - **Función:** Maneja comportamiento cuando el turno ha sido completado
+  - **Validaciones:** Registra tiempo de finalización y resultados
+  - **Comportamientos específicos:**
+      * *Todas las operaciones de cambio de estado son inválidas*
+      * *puedeFacturar(): true*
+      * *generarResumenAtencion(): Válido y específico de este estado*
 
++ **EstadoCancelado (Implementa EstadoTurno)**
+  - **Función:** Maneja comportamiento cuando el turno ha sido cancelado
+  - **Validaciones:** Registra motivo de cancelación y usuario responsable
+  - **Comportamientos específicos:**
+      * *Todas las operaciones de cambio son inválidas excepto reprogramar*
+      * *reprogramar(): Válido, crea nuevo turno en EstadoSolicitado*
+      * *analizarMotivoCancelacion(): Específico para estadísticas*
 
+#### Ventajas de la nueva estructura
 
-
-EstadoFinalizado (Implementa EstadoTurno)
-
-Función: Maneja comportamiento cuando el turno ha sido completado
-Comportamientos específicos:
-
-Todas las operaciones de cambio de estado son inválidas
-puedeFacturar(): true
-generarResumenAtencion(): Válido y específico de este estado
-
-
-Validaciones: Registra tiempo de finalización y resultados
-
-
-EstadoCancelado (Implementa EstadoTurno)
-
-Función: Maneja comportamiento cuando el turno ha sido cancelado
-Comportamientos específicos:
-
-Todas las operaciones de cambio son inválidas excepto reprogramar
-reprogramar(): Válido, crea nuevo turno en EstadoSolicitado
-analizarMotivoCancelacion(): Específico para estadísticas
-
-
-Validaciones: Registra motivo de cancelación y usuario responsable
-
-
-HistorialEstados
-
-Función: Registra todas las transiciones de estado del turno
-Atributos: estadoAnterior, estadoNuevo, fechaTransicion, usuarioResponsable, observaciones
-Responsabilidad: Auditoría completa de cambios de estado
-
-
-ValidadorTransiciones
-
-Función: Valida que las transiciones de estado sean válidas según reglas de negocio
-Método clave: validarTransicion(estadoActual, estadoDestino, contexto)
-Responsabilidad: Implementar reglas complejas de transición (horarios, permisos, etc.)
++ **Eliminación de condicionales:** No más switch/if masivos en clase Turno
++ **Encapsulación de comportamiento:** Cada estado maneja su lógica específica
++ **Transiciones controladas:** Imposible realizar transiciones inválidas
++ **Extensibilidad:** Fácil agregar nuevos estados (ej: EstadoReprogramado, EstadoEnEspera)
++ **Mantenibilidad:** Cambios en un estado no afectan otros estados
++ **Auditoría:** Seguimiento completo de cambios de estado
++ **Cumplimiento SOLID:**
+  - *SRP:* Cada estado tiene una responsabilidad clara
+  - *OCP:* Abierto para nuevos estados, cerrado para modificación
+  - *LSP:* Todos los estados son intercambiables
+  - *DIP:* Turno depende de la abstracción EstadoTurno
+    
+## Estructura de clases
+    
