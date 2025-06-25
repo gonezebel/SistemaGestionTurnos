@@ -4,9 +4,9 @@ Los patrones de diseño creacionales proporcionan diversos mecanismos de creaci�
 
 ### Relación con principios SOLID:
 
-+ SRP (Single Responsibility Principle): Separan la responsabilidad de crear objetos de su uso.
-+ OCP (Open/Closed Principle): Facilitan la extensión del sistema con nuevos tipos sin modificar código existente.
-+ DIP (Dependency Inversion Principle): Permiten depender de abstracciones en lugar de implementaciones concretas.
++ **SRP (Single Responsibility Principle):** Separan la responsabilidad de crear objetos de su uso.
++ **OCP (Open/Closed Principle):** Facilitan la extensión del sistema con nuevos tipos sin modificar código existente.
++ **DIP (Dependency Inversion Principle):** Permiten depender de abstracciones en lugar de implementaciones concretas.
 
 ### Propósito y Tipo del Patrón
 
@@ -37,9 +37,9 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 #### Nuevas clases incorporadas con Factory Method:
 
 + **Notificacion (Clase abstracta)**
- ! **Función:** Define la interfaz común para crear notificaciones
- ! Método clave: crearNotificacion() - método factory que las subclases deben implementar
- ! Responsabilidad: Encapsula la lógica común de envío de notificaciones
+- **Función:** Define la interfaz común para crear notificaciones
+- **Método clave:** crearNotificacion() - método factory que las subclases deben implementar
+- **Responsabilidad:** Encapsula la lógica común de envío de notificaciones
 
 + EmailNotification
  ++ Función: Factory concreto para crear notificaciones por email
