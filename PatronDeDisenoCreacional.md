@@ -27,65 +27,47 @@ El centro de salud necesita digitalizar su sistema de turnos que actualmente man
 
 #### Clases del problema original:
 
-GestorTurnos: Maneja la lógica de negocio de los turnos
-Turno: Entidad que representa un turno médico
-Paciente y Profesional: Entidades que necesitan recibir notificaciones
++ GestorTurnos: Maneja la lógica de negocio de los turnos
++ Turno: Entidad que representa un turno médico
++ Paciente y Profesional: Entidades que necesitan recibir notificaciones
 
-Limitaciones del enfoque original:
+##### Limitaciones del enfoque original:
 Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notificación y contener lógica condicional para decidir cómo enviar cada tipo de mensaje, violando el principio de responsabilidad única y el principio abierto/cerrado.
-Nuevas clases incorporadas con Factory Method:
 
-NotificacionFactory (Clase abstracta)
+#### Nuevas clases incorporadas con Factory Method:
 
-Función: Define la interfaz común para crear notificaciones
-Método clave: crearNotificacion() - método factory que las subclases deben implementar
-Responsabilidad: Encapsula la lógica común de envío de notificaciones
++ Notificacion (Clase abstracta)
+++ Función: Define la interfaz común para crear notificaciones
+++ Método clave: crearNotificacion() - método factory que las subclases deben implementar
+++ Responsabilidad: Encapsula la lógica común de envío de notificaciones
 
++ EmailNotification
+++ Función: Factory concreto para crear notificaciones por email
+++ Responsabilidad: Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
 
-EmailNotificationFactory
++ WhatsAppNotification
+++ Función: Factory concreto para crear notificaciones por WhatsApp
+++ Responsabilidad: Gestiona API de WhatsApp, valida números de teléfono, crea objetos WhatsAppNotificacion
 
-Función: Factory concreto para crear notificaciones por email
-Responsabilidad: Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
++ SMSNotification
+++ Función: Factory concreto para crear notificaciones por SMS
+++ Responsabilidad: Integra con proveedor SMS, valida números internacionales, crea objetos SMSNotificacion
 
++ Notificacion (Interfaz)
+++Función: Define el contrato común para todas las notificaciones
+++Métodos: configurar(), enviar(), validarDatos()
 
-WhatsAppNotificationFactory
++ GestorNotificaciones
+++ Función: Cliente que utiliza las factories sin conocer implementaciones específicas
+++ Responsabilidad: Coordina el envío de notificaciones usando el factory apropiado según el tipo requerido
 
-Función: Factory concreto para crear notificaciones por WhatsApp
-Responsabilidad: Gestiona API de WhatsApp, valida números de teléfono, crea objetos WhatsAppNotificacion
+#### Ventajas de la nueva estructura:
 
-
-SMSNotificationFactory
-
-Función: Factory concreto para crear notificaciones por SMS
-Responsabilidad: Integra con proveedor SMS, valida números internacionales, crea objetos SMSNotificacion
-
-
-Notificacion (Interfaz)
-
-Función: Define el contrato común para todas las notificaciones
-Métodos: configurar(), enviar(), validarDatos()
-
-
-EmailNotificacion, WhatsAppNotificacion, SMSNotificacion
-
-Función: Implementaciones concretas de diferentes tipos de notificación
-Responsabilidad: Contienen la lógica específica para enviar cada tipo de mensaje
-
-
-GestorNotificaciones
-
-Función: Cliente que utiliza las factories sin conocer implementaciones específicas
-Responsabilidad: Coordina el envío de notificaciones usando el factory apropiado según el tipo requerido
-
-
-
-Ventajas de la nueva estructura:
-
-Extensibilidad: Agregar una nueva NotificacionTelegramFactory solo requiere crear dos nuevas clases sin modificar código existente
-Mantenibilidad: Cada tipo de notificación está encapsulado en su propia factory
-Testabilidad: Es fácil crear factories mock para testing
-Flexibilidad: El sistema puede decidir en tiempo de ejecución qué tipo de notificación usar
-Cumplimiento SOLID: Respeta SRP (cada factory tiene una responsabilidad), OCP (abierto para extensión, cerrado para modificación) y DIP (depende de abstracciones)
++ Extensibilidad: Agregar una nueva NotificacionTelegramFactory solo requiere crear dos nuevas clases sin modificar código existente
++ Mantenibilidad: Cada tipo de notificación está encapsulado en su propia factory
++ Testabilidad: Es fácil crear factories mock para testing
++ Flexibilidad: El sistema puede decidir en tiempo de ejecución qué tipo de notificación usar
++ Cumplimiento SOLID: Respeta SRP (cada factory tiene una responsabilidad), OCP (abierto para extensión, cerrado para modificación) y DIP (depende de abstracciones)
 
 ## Estructura de clases
 
