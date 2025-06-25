@@ -22,3 +22,7 @@ El sistema de gestión de turnos necesita enviar notificaciones automáticas por
 
 El patrón Factory Method permite crear diferentes tipos de notificaciones a través de una interfaz común, delegando a las subclases la decisión de qué clase concreta instanciar. Esto hace el sistema flexible y extensible.
 
+## Estructura de clases
+
+
+
