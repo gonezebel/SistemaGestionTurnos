@@ -25,7 +25,7 @@ El patrón Adapter crea adaptadores específicos para cada obra social que tradu
 
 ### Problema detallado
 
-El sistema debe verificar autorizaciones de cobertura médica y generar tokens para validar que los pacientes tienen derecho a la atención. En el mercado local existen múltiples obras sociales y prepagas, cada una con sistemas tecnológicos diferentes, por lo cual el desafío técnico radica en que el sistema interno necesita una interfaz uniforme para validar coberturas, pero cada obra social tiene:
+El sistema debe verificar autorizaciones de cobertura médica y validar tokens para confirmar que los pacientes tienen derecho a la atención. En el mercado local existen múltiples obras sociales y prepagas, cada una con sistemas tecnológicos diferentes, por lo cual el desafío técnico radica en que el sistema interno necesita una interfaz uniforme para validar coberturas, pero cada obra social tiene:
 
   - **Protocolos de comunicación diferentes** (REST, SOAP, FTP)
   - **Formatos de datos incompatibles** (JSON, XML, texto plano)
@@ -46,7 +46,6 @@ Sin Adapter, el ValidadorCobertura tendría que:
 + **Manejar múltiples formatos de datos incompatibles**
 + **Implementar diferentes métodos de autenticación**
 + **Ser modificado cada vez que se agrega una nueva obra social**
-+ **Violar el principio de responsabilidad única al mezclar lógica de validación con integración**
 
 #### Nuevas clases incorporadas con Adapter:
 
