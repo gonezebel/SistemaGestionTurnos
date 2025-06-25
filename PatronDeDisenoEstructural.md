@@ -102,6 +102,17 @@ Sin Adapter, el ValidadorCobertura tendría que:
   - **Responsabilidad:** Encapsular la lógica de selección de adaptador
   - **Método clave:** crearAdaptador(codigoObraSocial: String): InterfazCoberturaMedica
 
+#### Ventajas de la nueva estructura:
+
++ **Compatibilidad:** Integración transparente con múltiples sistemas incompatibles
++ **Extensibilidad:** Fácil agregar nuevas obras sociales creando nuevos adaptadores
++ **Mantenibilidad:** Cambios en APIs externas solo afectan su adaptador específico
++ **Reutilización:** Los adaptadores pueden usarse en otros módulos del sistema
++ **Cumplimiento SOLID:**
+    - *SRP:* Cada adaptador tiene una responsabilidad específica
+    - *OCP:* Abierto para nuevas obras sociales, cerrado para modificación
+    - *DIP:* ValidadorCobertura depende de la abstracción, no de implementaciones
+
 ## Estructura de clases
 
 
