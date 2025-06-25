@@ -1,4 +1,4 @@
-# Anexo 1 - Introducción al Diseño Orientado a Objetos
+# Anexo - Introducción al Diseño Orientado a Objetos
 
 ## Concepto del Paradigma Orientado a Objetos
 
