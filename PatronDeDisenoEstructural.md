@@ -102,6 +102,6 @@ Sin Adapter, el ValidadorCobertura tendría que:
   - **Responsabilidad:** Encapsular la lógica de selección de adaptador
   - **Método clave:** crearAdaptador(codigoObraSocial: String): InterfazCoberturaMedica
 
-
+## Estructura de clases
 
 
