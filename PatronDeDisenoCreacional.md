@@ -37,39 +37,40 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 #### Nuevas clases incorporadas con Factory Method:
 
 + **Notificacion (Clase abstracta)**
-- **Función:** Define la interfaz común para crear notificaciones
-- **Método clave:** crearNotificacion() - método factory que las subclases deben implementar
-- **Responsabilidad:** Encapsula la lógica común de envío de notificaciones
+  - **Función:** Define la interfaz común para crear notificaciones
+  - **Método clave:** crearNotificacion() - método factory que las subclases deben implementar
+  - **Responsabilidad:** Encapsula la lógica común de envío de notificaciones
 
-+ EmailNotification
- ++ Función: Factory concreto para crear notificaciones por email
- ++ Responsabilidad: Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
++ **EmailNotificacion**
+  - **Función:** Factory concreto para crear notificaciones por email
+  - **Responsabilidad:** Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
 
-+ WhatsAppNotification
-++ Función: Factory concreto para crear notificaciones por WhatsApp
-++ Responsabilidad: Gestiona API de WhatsApp, valida números de teléfono, crea objetos WhatsAppNotificacion
++ **WhatsAppNotificacion**
+  - **Función:** Factory concreto para crear notificaciones por WhatsApp
+  - **Responsabilidad:** Gestiona API de WhatsApp, valida números de teléfono, crea objetos WhatsAppNotificacion
 
-+ SMSNotification
-++ Función: Factory concreto para crear notificaciones por SMS
-++ Responsabilidad: Integra con proveedor SMS, valida números internacionales, crea objetos SMSNotificacion
++ **SMSNotificacion**
+  - **Función:** Factory concreto para crear notificaciones por SMS
+  - **Responsabilidad:** Integra con proveedor SMS, valida números internacionales, crea objetos SMSNotificacion
 
-+ Notificacion (Interfaz)
-++Función: Define el contrato común para todas las notificaciones
-++Métodos: configurar(), enviar(), validarDatos()
++ **Notificacion (Interfaz)**
+ - **Función:** Define el contrato común para todas las notificaciones
+ - **Métodos:** configurar(), enviar(), validarDatos()
 
-+ GestorNotificaciones
-++ Función: Cliente que utiliza las factories sin conocer implementaciones específicas
-++ Responsabilidad: Coordina el envío de notificaciones usando el factory apropiado según el tipo requerido
++ **GestorNotificaciones**
+ - **Función:** Cliente que utiliza las factories sin conocer implementaciones específicas
+ - **Responsabilidad:** Coordina el envío de notificaciones usando el factory apropiado según el tipo requerido
 
 #### Ventajas de la nueva estructura:
 
-+ Extensibilidad: Agregar una nueva NotificacionTelegramFactory solo requiere crear dos nuevas clases sin modificar código existente
-+ Mantenibilidad: Cada tipo de notificación está encapsulado en su propia factory
-+ Testabilidad: Es fácil crear factories mock para testing
-+ Flexibilidad: El sistema puede decidir en tiempo de ejecución qué tipo de notificación usar
-+ Cumplimiento SOLID: Respeta SRP (cada factory tiene una responsabilidad), OCP (abierto para extensión, cerrado para modificación) y DIP (depende de abstracciones)
++ **Extensibilidad:** Agregar una nueva NotificacionTelegram solo requiere crear dos nuevas clases sin modificar código existente
++ **Mantenibilidad:** Cada tipo de notificación está encapsulado en su propia factory
++ **Testabilidad:** Es fácil crear factories mock para testing
++ **Flexibilidad:** El sistema puede decidir en tiempo de ejecución qué tipo de notificación usar
++ **Cumplimiento SOLID:** Respeta SRP (cada factory tiene una responsabilidad), OCP (abierto para extensión, cerrado para modificación) y DIP (depende de abstracciones)
 
 ## Estructura de clases
+
 
 
 
