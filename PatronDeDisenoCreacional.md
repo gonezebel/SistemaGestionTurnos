@@ -23,7 +23,7 @@ El patrón Factory Method permite crear diferentes tipos de notificaciones a tra
 ## Motivación
 
 ### Problema detallado
-El centro de salud necesita digitalizar su sistema de turnos que actualmente maneja en agenda física, lo que genera problemas como pérdida de citas, falta de confirmación y superposición de turnos. Parte de los problemas, radica en la fase de comunicación donde el desafío técnico implica que las notificaciones deben enviarse por múltiples canales (email, SMS) y el sistema debe ser extensible para incorporar futuros medios de comunicación como Whatsapp, Telegram o notificaciones push, sin requerir modificaciones al código base.
+El centro de salud necesita digitalizar su sistema de turnos que actualmente maneja en agenda física, lo que genera problemas como pérdida de citas, falta de confirmación y superposición de turnos. Parte de los problemas, radican en la fase de comunicación donde el desafío técnico implica que las notificaciones deben enviarse por múltiples canales (email, SMS) y el sistema debe ser extensible para incorporar futuros medios de comunicación como Whatsapp, Telegram o notificaciones push, sin requerir modificaciones al código base.
 
 #### Clases del problema original:
 
