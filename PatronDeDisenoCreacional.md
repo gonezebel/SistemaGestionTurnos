@@ -1,4 +1,4 @@
-# Anexo - Aplicación de Patrón de Diseño creacional - FACTORY METHOD
+# Anexo - Aplicación de patrón de diseño creacional - FACTORY METHOD
 
 Los patrones de diseño creacionales proporcionan diversos mecanismos de creación de objetos que incrementan la flexibilidad y la reutilización del código existente. Estos patrones se enfocan en el proceso de creación de objetos, encapsulando el conocimiento sobre qué clases concretas utiliza el sistema y ocultando cómo se crean e inicializan estas instancias.
 
