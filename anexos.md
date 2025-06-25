@@ -4,4 +4,4 @@
 + [Anexo - Principios SOLID](solid.md)
 + [Anexo - Aplicación de patrón de diseño creacional - FACTORY METHOD](PatronDeDisenoCreacional.md)
 + [Anexo - Aplicación de patrón de diseño estructural - ADAPTER](PatronDeDisenoEstructural.md)
-+ [Anexo - Aplicación de patrón de diseño de comportamiento - OBSERVER](PatronDeDisenoDeComportamiento.md)
++ [Anexo - Aplicación de patrón de diseño de comportamiento - STATE](PatronDeDisenoDeComportamiento.md)
