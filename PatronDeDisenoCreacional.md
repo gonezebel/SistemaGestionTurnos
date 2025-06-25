@@ -25,16 +25,16 @@ El patrón Factory Method permite crear diferentes tipos de notificaciones a tra
 ### Problema detallado
 El centro de salud necesita digitalizar su sistema de turnos que actualmente maneja en agenda física, lo que genera problemas como pérdida de citas, falta de confirmación y superposición de turnos. Parte de los problemas, radican en la fase de comunicación donde el desafío técnico implica que las notificaciones deben enviarse por múltiples canales (email, SMS) y el sistema debe ser extensible para incorporar futuros medios de comunicación como Whatsapp, Telegram o notificaciones push, sin requerir modificaciones al código base.
 
-#### Clases del problema original:
+#### Clases del problema original
 
 + **GestorTurnos:** Maneja la lógica de negocio de los turnos
 + **Turno:** Entidad que representa un turno médico
 + **Paciente y Profesional:** Entidades que necesitan recibir notificaciones
 
-##### Limitaciones del enfoque original:
+##### Limitaciones del enfoque original
 Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notificación y contener lógica condicional para decidir cómo enviar cada tipo de mensaje, violando el principio de responsabilidad única y el principio abierto/cerrado.
 
-#### Nuevas clases incorporadas con Factory Method:
+#### Nuevas clases incorporadas con Factory Method
 
 + **Notificacion (Clase abstracta)**
   - **Función:** Define la interfaz común para crear notificaciones
