@@ -37,13 +37,13 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 #### Nuevas clases incorporadas con Factory Method:
 
 + Notificacion (Clase abstracta)
-++ Función: Define la interfaz común para crear notificaciones
-++ Método clave: crearNotificacion() - método factory que las subclases deben implementar
-++ Responsabilidad: Encapsula la lógica común de envío de notificaciones
+ ++ Función: Define la interfaz común para crear notificaciones
+ ++ Método clave: crearNotificacion() - método factory que las subclases deben implementar
+ ++ Responsabilidad: Encapsula la lógica común de envío de notificaciones
 
 + EmailNotification
-++ Función: Factory concreto para crear notificaciones por email
-++ Responsabilidad: Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
+ ++ Función: Factory concreto para crear notificaciones por email
+ ++ Responsabilidad: Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
 
 + WhatsAppNotification
 ++ Función: Factory concreto para crear notificaciones por WhatsApp
