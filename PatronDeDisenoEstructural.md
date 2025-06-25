@@ -9,7 +9,7 @@ Los patrones de diseño estructurales explican cómo ensamblar objetos y clases 
 + **DIP (Dependency Inversion Principle):** Facilitan que el código dependa de abstracciones en lugar de implementaciones específicas
 + **ISP (Interface Segregation Principle):** Evitan que las clases dependan de interfaces que no utilizan
 
-### Propósito y Tipo del Patrón
+### Propósito y tipo del patrón
 
 Adapter es un patrón de diseño estructural que permite que objetos con interfaces incompatibles colaboren entre sí; actúa capturando llamadas de un objeto y transformándolas al formato e interfaz reconocible por el segundo objeto.
 
@@ -84,7 +84,7 @@ Sin Adapter, el ValidadorCobertura tendría que:
       * *Procesar archivos de respuesta con formato fijo*
       * *Gestionar colas de procesamiento batch*
 
-+  **AdaptadorOSECAC (Implementa InterfazCoberturaMedica)**
++ **AdaptadorOSECAC (Implementa InterfazCoberturaMedica)**
   - **Función:** Adapta las llamadas internas al API de la Obra Social de Empleados de Comercio
   - **Responsabilidades:**
       * *Transformar datos a formato propietario JSON*
@@ -92,7 +92,7 @@ Sin Adapter, el ValidadorCobertura tendría que:
       * *Convertir códigos de error específicos*
       * *Gestionar límites de rate limiting del API*
         
-+  **ValidadorCobertura (Modificado)**
++ **ValidadorCobertura (Modificado)**
   - **Nueva función:** Utiliza adaptadores sin conocer implementaciones específicas
   - **Método principal:** validarAutorizacion(paciente: Paciente, tipoConsulta: String)
   - **Beneficio:** Lógica de validación desacoplada de integraciones externas
