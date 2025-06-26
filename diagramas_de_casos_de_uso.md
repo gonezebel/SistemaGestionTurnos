@@ -12,7 +12,7 @@
 
   * [**Caso de Uso 6 - Crear Agenda para un profesional**](https://drive.google.com/file/d/1xHGw4QJWWgKjbSaHfOaVW_STKFFeI70A/view?usp=sharing)
 
-  * [**Caso de Uso 7 - Suspender agenda para un profesional**](https://drive.google.com/file/d/1tC1_MA-2NATD2UWrV5CPZJ_r2kgUe8xv/view?usp=sharing)
+  * [**Caso de Uso 7 - Suspender agenda a solicitud de un profesional**](https://drive.google.com/file/d/1tC1_MA-2NATD2UWrV5CPZJ_r2kgUe8xv/view?usp=sharing)
 
 
 
