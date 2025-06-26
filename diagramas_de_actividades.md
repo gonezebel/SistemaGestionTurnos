@@ -1,6 +1,6 @@
 # Diagramas de Actividades
 
-* [**Diagrama de Actividad - Registrar un paciente nuevo al sistema**](https://drive.google.com/file/d/1ssL6uqqpBB0G2GUu4tUiPkDBjIMNYdBp/view?usp=sharing)
+* [**Diagrama de Actividad - Registrar un paciente nuevo al sistema**](https://drive.google.com/file/d/1Q1fG15tIdTyCwrot1FvH7Hv77bjVctFU/view?usp=sharing)
 
  * [**Diagrama de Actividad - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1a4aiFZuNZVX5AT8ZLFsuaEzu5yv9Opv8/view?usp=sharing)
 
