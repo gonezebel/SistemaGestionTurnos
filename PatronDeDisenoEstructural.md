@@ -1,6 +1,6 @@
 # Anexo - Aplicación de patrón de diseño estructural - Adapter
 
-Los patrones de diseño estructurales explican cómo ensamblar objetos y clases en estructuras más grandes, a la vez que se mantiene la flexibilidad y eficiencia de estas estructuras. Estos patrones se ocupan de la composición de clases y objetos para formar estructuras más complejas y resolver problemas de incompatibilidad entre interfaces.
+Los patrones de diseño estructurales explican cómo ensamblar objetos y clases en estructuras más grandes, a la vez que se mantiene la flexibilidad y eficiencia de éstas. Estos patrones se ocupan de la composición de clases y objetos para formar estructuras más complejas y resolver problemas de incompatibilidad entre interfaces.
 
 ### Relación con principios SOLID:
 
@@ -114,4 +114,6 @@ Sin Adapter, el ValidadorCobertura tendría que:
 
 ## Estructura de clases
 
+[**Link Drawio**](https://drive.google.com/file/d/1DKKe1LnGOIaIINMSfJti88rqcaooNr8S/view?usp=sharing)
 
+![State](imagenes/ADAPTER.jpg)
