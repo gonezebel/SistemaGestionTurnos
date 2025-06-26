@@ -36,20 +36,20 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 
 #### Nuevas clases incorporadas con Factory Method
 
-+ **Notificacion (Clase abstracta)**
++ **NotificacionFactory (Clase abstracta)**
   - **Función:** Define la interfaz común para crear notificaciones
   - **Método clave:** crearNotificacion() - método factory que las subclases deben implementar
   - **Responsabilidad:** Encapsula la lógica común de envío de notificaciones
 
-+ **EmailNotificacion**
++ **EmailNotificacionFactory**
   - **Función:** Factory concreto para crear notificaciones por email
   - **Responsabilidad:** Configura parámetros SMTP, valida direcciones de email, crea objetos EmailNotificacion
 
-+ **WhatsAppNotificacion**
++ **WhatsAppNotificacionFactory**
   - **Función:** Factory concreto para crear notificaciones por WhatsApp
   - **Responsabilidad:** Gestiona API de WhatsApp, valida números de teléfono, crea objetos WhatsAppNotificacion
 
-+ **SMSNotificacion**
++ **SMSNotificacionFactory**
   - **Función:** Factory concreto para crear notificaciones por SMS
   - **Responsabilidad:** Integra con proveedor SMS, valida números internacionales, crea objetos SMSNotificacion
 
@@ -65,12 +65,11 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 
 + **Extensibilidad:** Agregar una nueva NotificacionTelegram solo requiere crear dos nuevas clases sin modificar código existente
 + **Mantenibilidad:** Cada tipo de notificación está encapsulado en su propia factory
-+ **Testabilidad:** Es fácil crear factories mock para testing
 + **Flexibilidad:** El sistema puede decidir en tiempo de ejecución qué tipo de notificación usar
 + **Cumplimiento SOLID:** Respeta SRP (cada factory tiene una responsabilidad), OCP (abierto para extensión, cerrado para modificación) y DIP (depende de abstracciones)
 
 ## Estructura de clases
 
-
+[**Link Drawio**](https://drive.google.com/file/d/1InAVUOTy_29eWaspga-19KCF4QuCle4T/view?usp=sharing)
 
 
