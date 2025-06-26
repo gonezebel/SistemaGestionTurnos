@@ -12,5 +12,5 @@
 
   * [**Caso de Uso 6: Crear Agenda para un profesional - Escenario creación exitosa de agenda**](https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3-xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/edit?gid=1052671722#gid=1052671722)
 
-  * [**Caso de Uso 7: Suspender agenda a solicitud del profesional-  Escenario suspensión exitosa de agenda**(https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/editgid=1626642279#gid=1626642279&range=F)
+  * [**Caso de Uso 7: Suspender agenda a solicitud del profesional-  Escenario suspensión exitosa de agenda**](https://docs.google.com/spreadsheets/d/1hxzcFycecnDzI3xVNvQ89PMFTOcJ8oHp2gaU0HYEMs/editgid=1626642279#gid=1626642279&range=F)
 
