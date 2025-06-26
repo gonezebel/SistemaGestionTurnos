@@ -126,3 +126,6 @@ Sin State, la clase Turno tendría:
     
 ## Estructura de clases
     
+[**Link Drawio**](https://drive.google.com/file/d/1QeedMc3eTCll6shfMHFqWfYOEk9DkCIS/view?usp=sharing)
+
+![State](imagenes/STATE.jpg)
