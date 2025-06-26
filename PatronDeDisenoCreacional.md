@@ -72,6 +72,6 @@ Sin el patrón, el GestorTurnos tendría que conocer todos los tipos de notifica
 
 [**Link Drawio**](https://drive.google.com/file/d/1InAVUOTy_29eWaspga-19KCF4QuCle4T/view?usp=sharing)
 
-imagenes/FACTORY METHOD.jpg
+![FactoryMethod](imagenes/FACTORY METHOD.jpg)
 
 
