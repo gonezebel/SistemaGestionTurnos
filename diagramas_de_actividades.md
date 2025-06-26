@@ -11,3 +11,5 @@
   * [**Diagrama de Actividad - Envío de recordatorios de turnos**](https://drive.google.com/file/d/15RsVmkJqSjSR9LedOBzsLmTkfILIiMux/view?usp=sharing)
 
   * [**Diagrama de Actividad - Crear Agenda para un profesional**](https://drive.google.com/file/d/195fuMYYgbR4TpGbgvs5OXzhnHFEhIc4v/view?usp=sharing)
+
+  * [**Diagrama de Actividad - Suspender agenda a solicitud del profesional**](https://drive.google.com/file/d/195fuMYYgbR4TpGbgvs5OXzhnHFEhIc4v/view?usp=sharing)
