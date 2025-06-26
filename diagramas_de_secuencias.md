@@ -11,3 +11,5 @@
 * [**Diagrama de Secuencia - Envío de recordatorios de turnos -  Envío exitoso de recordatorio de turno a paciente**](https://drive.google.com/file/d/13oaHiB7_uXApEts6m_NTnVnddOoqUor-/view?usp=sharing)
 
 * [**Diagrama de Secuencia - Crear Agenda para un profesional -  Creación exitosa de agenda por parte de personal administrativo**](https://drive.google.com/file/d/1xAb6ZYueZVhWdNgGQvxEs8ZoWiU7XJIb/view?usp=sharing)
+
+* [**Diagrama de Secuencia - Suspender agenda a solicitud del profesional- Suspensión exitosa de agenda**](https://drive.google.com/file/d/1EgVcI39h9DbRyNTn0-jZUnskg-cSfIkS/view?usp=sharing)
