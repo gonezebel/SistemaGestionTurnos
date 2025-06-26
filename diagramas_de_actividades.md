@@ -2,7 +2,7 @@
 
 * [**Diagrama de Actividad - Registrar un paciente nuevo al sistema**](https://drive.google.com/file/d/1Q1fG15tIdTyCwrot1FvH7Hv77bjVctFU/view?usp=sharing)
 
- * [**Diagrama de Actividad - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1a4aiFZuNZVX5AT8ZLFsuaEzu5yv9Opv8/view?usp=sharing)
+ * [**Diagrama de Actividad - Registrar un nuevo profesional de la salud**](https://drive.google.com/file/d/1HmYWcQdeIJ-ud8qH4DPujuBoMejVc8eL/view?usp=sharing)
 
   * [**Diagrama de Actividad - Asignar un turno con un médico para un paciente**](https://drive.google.com/file/d/1ou_pH11R-E6gmtLoGa8FxsoyIPpAbRL-/view?usp=sharing)
 
