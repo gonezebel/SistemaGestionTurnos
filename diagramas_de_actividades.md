@@ -12,4 +12,4 @@
 
   * [**Diagrama de Actividad - Crear Agenda para un profesional**](https://drive.google.com/file/d/15jUGiH83TdHWyqmw-H-3WYsUodtq1knC/view?usp=sharing)
 
-  * [**Diagrama de Actividad - Suspender agenda a solicitud del profesional**](https://drive.google.com/file/d/195fuMYYgbR4TpGbgvs5OXzhnHFEhIc4v/view?usp=sharing)
+  * [**Diagrama de Actividad - Suspender agenda a solicitud del profesional**](https://drive.google.com/file/d/1e2B2JrO9aOplBPlqN5IMeJIt9uoKvqDn/view?usp=sharing)
