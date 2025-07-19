@@ -44,3 +44,8 @@ La clase abstracta Persona y sus especializaciones Paciente y Profesional aplica
 
 ![State](imagenes/EJEMPLO_ABSTRACCION.jpg)
 
+## Ejemplo de Código
+
+
+
+
