@@ -22,9 +22,11 @@ La herencia es el principio de la POO que permite que una subclase o clase deriv
   
 ## Ejemplo en el proyecto
 
-[**Link Drawio**]()
+La jerarquía Persona → Paciente/Profesional representa un ejemplo de herencia donde la clase abstracta Persona define los atributos y métodos comunes a todas las personas del sistema (nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email) junto con operaciones básicas como getNombreCompleto(), getContacto(), validarDatos() y actualizarContacto(). Las subclases Paciente y Profesional heredan automáticamente todas estas características comunes y añaden sus propios atributos específicos: Paciente incorpora numeroHistoriaClinica, coberturaSalud, numeroAfiliado con métodos como validarCobertura() y getHistorialTurnos(), mientras que Profesional añade especialidad, numeroMatricula, tipoContrato con métodos como validarMatricula() y verificarDisponibilidad(). Esta herencia permite reutilizar todo el código común de gestión de personas mientras cada subclase especializa funcionalidades específicas de su rol en el sistema médico, evitando duplicación de código y facilitando el mantenimiento.
 
-![Ejemplo_Herencia]()
+[**Link Drawio**](https://drive.google.com/file/d/1vqLEjgyxjCP_PLtnMom2xZRY9ASmMjuE/view?usp=sharing)
+
+![Ejemplo_Herencia](imagenes/EJEMPLO_HERENCIA.jpg)
 
 ## Ejemplo de Código
 
