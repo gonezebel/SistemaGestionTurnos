@@ -22,13 +22,13 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 Por otro lado, patrones como Adapter y Decorator, emplean abstracciones para definir interfaces comunes que permiten la interoperabilidad entre componentes incompatibles en el primero o la extensión transparente de funcionalidades en el segundo.
 
-   * En Adapter, la abstracción es esencial para hacer compatible sistemas con interfaces incompatibles. El adaptador implementa la interfaz abstracta esperada por el cliente mientras internamente traduce las llamadas a la interfaz del sistema adaptado. Esta abstracción oculta la incompatibilidad y permite tratar sistemas heterogéneos de manera uniforme.
+     * En Adapter, la abstracción es esencial para hacer compatible sistemas con interfaces incompatibles. El adaptador implementa la interfaz abstracta esperada por el cliente mientras internamente traduce las llamadas a la interfaz del sistema adaptado. Esta abstracción oculta la incompatibilidad y permite tratar sistemas heterogéneos de manera uniforme.
 
-   * En cuanto a Decorator, la abstracción permite que tanto el objeto original como todos los "añadidos" (decoradores) se vean iguales desde afuera, permitiendo añadir capas de funcionalidades sin afectar las anteriores porque cada nueva capa puede tratar a lo que está debajo como si fuera el objeto original porque todos usan la misma abstracción para comunicarse.
+     * En cuanto a Decorator, la abstracción permite que tanto el objeto original como todos los "añadidos" (decoradores) se vean iguales desde afuera, permitiendo añadir capas de funcionalidades sin afectar las anteriores porque cada nueva capa puede tratar a lo que está debajo como si fuera el objeto original porque todos usan la misma abstracción para comunicarse.
 
 + **Patrones de Comportamiento**: Patrones como Strategy y State utilizan abstracciones para encapsular algoritmos y comportamientos variables, permitiendo su intercambio dinámico sin afectar el contexto.
 
     * En Strategy, por ejemplo, se define una abstracción común para una familia de algoritmos intercambiables. Esta  abstracción separa la interfaz del algoritmo de su implementación, permitiendo agregar nuevos algoritmos en forma modular simplificada.
 
-    * En State, la abstracción define operaciones comunes que todos los estados deben implementar. Cada estado concreto maneja estas operaciones según su lógica específica, mientras que el contexto delega comportamientos a través de la abstracción. Esto permite que el objeto cambie de comportamiento dinámicamente manteniendo una interfaz consistente.
+    * Respecto a State, la abstracción define operaciones comunes que todos los estados deben implementar. Cada estado concreto maneja estas operaciones según su lógica específica, mientras que el contexto delega comportamientos a través de la abstracción. Esto permite que el objeto cambie de comportamiento dinámicamente manteniendo una interfaz consistente.
 
