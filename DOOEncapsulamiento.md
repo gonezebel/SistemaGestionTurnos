@@ -4,6 +4,6 @@ El encapsulamiento es el principio de la POO que busca ocultar los detalles inte
 
 ## Relación con principios SOLID:
 
-* Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal de la Abstracción se da con los siguientes:*
+Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal de la Abstracción se da con los siguientes:*
 
 + **Single Responsibility Principle (SRP)**: El encapsulamiento es el mecanismo que materializa el SRP al agrupar naturalmente datos y métodos que están relacionados y cambian por las mismas razones dentro de una sola unidad cohesiva. Al encapsular elementos en una clase, automáticamente se define una responsabilidad específica porque todos los elementos encapsulados juntos tienen una razón común de existir y cambiar, evitando que responsabilidades se dispersen por múltiples clases y dando seguridad de que cada clase tenga una sola razón para ser modificada.
