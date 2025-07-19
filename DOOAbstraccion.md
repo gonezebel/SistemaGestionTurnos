@@ -12,8 +12,6 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 + **Single Responsibility Principle (SRP)**: La abstracción ayuda a definir responsabilidades claras y únicas para cada clase. Al abstraer solo los aspectos esenciales de una entidad, naturalmente se delimita su responsabilidad principal, evitando la sobrecarga de funcionalidades no relacionadas.
 
-+ **Open/Closed Principle (OCP)**: Las abstracciones colaboran a que el código sea abierto para extensión pero cerrado para modificación. Las interfaces y clases abstractas proporcionan puntos de extensión estables que permiten agregar nuevas funcionalidades sin alterar el código existente.
-
 + **Dependency Inversion Principle (DIP)**: La abstracción es fundamental para la inversión de dependencias, ya que permite que los módulos de alto nivel dependan de abstracciones (interfaces) en lugar de implementaciones concretas.
 
 ## Relación con patrones de diseño: 
