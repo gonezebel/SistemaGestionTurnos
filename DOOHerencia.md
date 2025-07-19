@@ -12,7 +12,14 @@ La herencia es el principio de la POO que permite que una subclase o clase deriv
 
 + **Dependency Inversion Principle (DIP)**: Permite que el código cliente dependa de clases base abstractas o interfaces mientras trabaja con implementaciones específicas de las subclases, facilitando la inversión de dependencias al hacer que módulos de alto nivel dependan de abstracciones que las subclases implementan.
 
-## 
+## Relacion con los patrones de diseño
+
++ **Patrones Creacionales:** Factory Method utiliza herencia como mecanismo central donde diferentes subclases creator heredan de una clase base y especializan el método de creación, permitiendo que cada subclase defina qué tipo específico de producto crear mientras mantiene la estructura general heredada.
+
++ **Patrones Estructurales:** Composite emplea herencia donde tanto elementos simples (hojas) como elementos complejos (contenedores) heredan de la misma clase base Component, permitiendo construir estructuras de árbol donde todos los nodos pueden ser tratados uniformemente.
+  
++ **Patrones de Comportamiento:** Template Method depende completamente de herencia donde la clase base define el esqueleto del algoritmo con métodos abstractos que las subclases deben implementar, permitiendo reutilizar la estructura algorítmica mientras se especializa el comportamiento específico mediante herencia.
+
 
 
 
