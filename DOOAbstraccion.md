@@ -2,9 +2,9 @@
 
 En el diseño orientado a objetos, la abstracción es el proceso mediante el cual se identifican y modelan únicamente los aspectos esenciales de un objeto o concepto del mundo real, ocultando los detalles innecesarios o irrelevantes para el contexto específico del sistema a diseñar, facilitando la comprensión y el diseño del código. En cuanto a los mecanismos de implementación puede darse por dos formas:
 
-        * Clases Abstractas: Definen una estructura parcial que debe ser completada por las subclases. Proporcionan una base común mientras delegan la implementación específica a las clases derivadas.
+        Clases Abstractas: Definen una estructura parcial que debe ser completada por las subclases. Proporcionan una base común mientras delegan la implementación específica a las clases derivadas.
 
-        * Interfaces: Establecen contratos que definen qué métodos debe implementar una clase sin especificar cómo, solo comportamientos sin proporcionar implementación.
+        Interfaces: Establecen contratos que definen qué métodos debe implementar una clase sin especificar cómo, solo comportamientos sin proporcionar implementación.
 
 ## Relación con principios SOLID:
 
