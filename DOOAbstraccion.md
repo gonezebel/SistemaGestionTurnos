@@ -14,7 +14,7 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 + **Dependency Inversion Principle (DIP)**: La abstracción es fundamental para la inversión de dependencias, ya que permite que los módulos de alto nivel dependan de abstracciones (interfaces) en lugar de implementaciones concretas.
 
-## Relación con patrones de diseño: 
+## Relación con patrones de diseño
 
 + **Patrones Creacionales**: Por ejemplo, lo patrones Factory Method y Abstract Factory, utilizan abstracciones para simplificar la de creación de objetos. Factory lo implementa a traves de una superclase, delegando a las subclases la decisión de qué clase concreta instanciar; mientras que que Abstract extiende la abstracción para crear familias completas de objetos relacionados sin especificar clase concreta.
 
