@@ -38,7 +38,7 @@ La clase abstracta Persona y sus especializaciones Paciente y Profesional aplica
 
 [**Link Drawio**](https://drive.google.com/file/d/1vqLEjgyxjCP_PLtnMom2xZRY9ASmMjuE/view?usp=sharing)
 
-![State](imagenes/EJEMPLO_ABSTRACCION.jpg)
+![Ejemplo_Abstracción](imagenes/EJEMPLO_ABSTRACCION.jpg)
 
 ## Ejemplo de Código
 
