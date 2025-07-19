@@ -19,7 +19,12 @@ La herencia es el principio de la POO que permite que una subclase o clase deriv
 + **Patrones Estructurales:** Composite emplea herencia donde tanto elementos simples (hojas) como elementos complejos (contenedores) heredan de la misma clase base Component, permitiendo construir estructuras de árbol donde todos los nodos pueden ser tratados uniformemente.
   
 + **Patrones de Comportamiento:** Template Method depende completamente de herencia donde la clase base define el esqueleto del algoritmo con métodos abstractos que las subclases deben implementar, permitiendo reutilizar la estructura algorítmica mientras se especializa el comportamiento específico mediante herencia.
+  
+## Ejemplo en el proyecto
 
+[**Link Drawio**]()
 
+![Ejemplo_Herencia]()
 
+## Ejemplo de Código
 
