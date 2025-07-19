@@ -35,4 +35,12 @@ Por otro lado, patrones como Adapter y Decorator, emplean abstracciones para def
     * En Strategy, por ejemplo, se define una abstracción común para una familia de algoritmos intercambiables. Esta  abstracción separa la interfaz del algoritmo de su implementación, permitiendo agregar nuevos algoritmos en forma modular simplificada.
 
     * Respecto a State, la abstracción define operaciones comunes que todos los estados deben implementar. Cada estado concreto maneja estas operaciones según su lógica específica, mientras que el contexto delega comportamientos a través de la abstracción. Esto permite que el objeto cambie de comportamiento dinámicamente manteniendo una interfaz consistente.
+ 
+## Ejemplo en el proyecto
+
+La clase abstracta Persona y sus especializaciones Paciente y Profesional aplican el principio de abstracción al incluir únicamente los atributos esenciales para el sistema de gestión de turnos médicos. Se eligen datos como nombre, DNI, contacto y fecha de nacimiento porque son necesarios para identificar personas, enviar notificaciones y validar identidades en el contexto médico. Los atributos específicos (historia clínica y cobertura para pacientes; matrícula y especialidad para profesionales) están directamente relacionados con sus roles en la atención médica. Se omiten deliberadamente datos irrelevantes como bienes registrables, ingresos económicos o gustos personales, porque no contribuyen a los objetivos del sistema contribuyendo, así, a una mejor comprensión y facilidad de diseño.
+
+[**Link Drawio**](https://drive.google.com/file/d/1vqLEjgyxjCP_PLtnMom2xZRY9ASmMjuE/view?usp=sharing)
+
+![State](imagenes/EJEMPLO_ABSTRACCION.jpg)
 
