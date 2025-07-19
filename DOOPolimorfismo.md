@@ -2,7 +2,7 @@
 
 El polimorfismo es el principio que permite que objetos de diferentes clases respondan de manera distinta a la misma interfaz o mensaje, manteniendo la capacidad de ser tratados de manera uniforme. Este principio establece que una misma operación puede comportarse de forma diferente según el tipo específico del objeto que la ejecute, permitiendo que el código cliente trabaje con abstracciones sin conocer los detalles específicos de cada implementación concreta, obteniendo reutilización de código genérico flexibilidad y extensibilidad. 
 
-## Relación con principios SOLID:
+## Relación con principios SOLID
 
 *Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal del Poliformismo se da con los siguientes:*
 
@@ -10,7 +10,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 + **Liskov Substitution Principle (LSP):** El polimorfismo solo funciona correctamente cuando las subclases pueden sustituir completamente a sus clases base sin alterar el comportamiento esperado del sistema, siendo este principio fundamental para que el polimorfismo sea seguro y predecible.
 
-## Relación con patrones de diseño: 
+## Relación con patrones de diseño
 
 + **Patrones Creacionales:** Por ejemplo, Template Method utiliza polimorfismo para permitir que las subclases redefinan pasos específicos de un algoritmo manteniendo la estructura general, mientras que Chain of Responsibility emplea polimorfismo para que diferentes manejadores procesen solicitudes según su capacidad específica de manejo.
 
