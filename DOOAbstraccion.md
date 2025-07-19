@@ -8,13 +8,11 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 ## Relación con principios SOLID:
 
+* Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal de la Abstracción se da con los siguientes:*
+
 + **Single Responsibility Principle (SRP)**: La abstracción ayuda a definir responsabilidades claras y únicas para cada clase. Al abstraer solo los aspectos esenciales de una entidad, naturalmente se delimita su responsabilidad principal, evitando la sobrecarga de funcionalidades no relacionadas.
 
 + **Open/Closed Principle (OCP)**: Las abstracciones colaboran a que el código sea abierto para extensión pero cerrado para modificación. Las interfaces y clases abstractas proporcionan puntos de extensión estables que permiten agregar nuevas funcionalidades sin alterar el código existente.
-
-+ **Liskov Substitution Principle (LSP)**: La abstracción correcta colabora a que las implementaciones derivadas puedan sustituir a sus abstracciones base sin afectar el comportamiento del sistema. 
-
-+ **Interface Segregation Principle (ISP)**: La abstracción promueve la creación de interfaces específicas y cohesivas en lugar de interfaces inamovibles. Esto evita que las clases dependan de métodos que no utilizan.
 
 + **Dependency Inversion Principle (DIP)**: La abstracción es fundamental para la inversión de dependencias, ya que permite que los módulos de alto nivel dependan de abstracciones (interfaces) en lugar de implementaciones concretas.
 
