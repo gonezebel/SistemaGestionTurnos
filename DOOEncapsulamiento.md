@@ -29,69 +29,69 @@ La clase Turno del diagrama de clases representa un ejemplo de encapsulamiento a
 ## Ejemplo de PseudoCódigo
 
 CLASE Turno
-    PRIVADO numeroTurno: cadena
-    PRIVADO fecha: fecha
-    PRIVADO hora: tiempo
-    PRIVADO estado: cadena
-    PRIVADO motivo: cadena
-    PRIVADO observaciones: cadena
-    PRIVADO fechaCreacion: fecha
-    PRIVADO requiereAutorizacion: booleano
-    PRIVADO tokenAutorizacion: cadena
+        PRIVADO numeroTurno: cadena
+        PRIVADO fecha: fecha
+        PRIVADO hora: tiempo
+        PRIVADO estado: cadena
+        PRIVADO motivo: cadena
+        PRIVADO observaciones: cadena
+        PRIVADO fechaCreacion: fecha
+        PRIVADO requiereAutorizacion: booleano
+        PRIVADO tokenAutorizacion: cadena
 
-    CONSTRUCTOR Turno(numeroTurno, fecha, hora, motivo)
-        ESTE.numeroTurno = numeroTurno
-        ESTE.fecha = fecha
-        ESTE.hora = hora
-        ESTE.motivo = motivo
-        ESTE.estado = "SOLICITADO"
-        ESTE.fechaCreacion = fechaActual()
-        ESTE.requiereAutorizacion = FALSO
-        ESTE.tokenAutorizacion = ""
-        ESTE.observaciones = ""
-    FIN CONSTRUCTOR
+        CONSTRUCTOR Turno(numeroTurno, fecha, hora, motivo)
+            ESTE.numeroTurno = numeroTurno
+            ESTE.fecha = fecha
+            ESTE.hora = hora
+            ESTE.motivo = motivo
+            ESTE.estado = "SOLICITADO"
+            ESTE.fechaCreacion = fechaActual()
+            ESTE.requiereAutorizacion = FALSO
+            ESTE.tokenAutorizacion = ""
+            ESTE.observaciones = ""
+        FIN CONSTRUCTOR
 
-    PÚBLICO confirmar(): vacío
-        SI estado = "SOLICITADO" ENTONCES
-            estado = "CONFIRMADO"
-            IMPRIMIR "Turno confirmado"
-        SINO
-            LANZAR_EXCEPCIÓN "No se puede confirmar turno en estado " + estado
-        FIN SI
-    FIN MÉTODO
+        PÚBLICO confirmar(): vacío
+            SI estado = "SOLICITADO" ENTONCES
+                estado = "CONFIRMADO"
+                IMPRIMIR "Turno confirmado"
+            SINO
+                LANZAR_EXCEPCIÓN "No se puede confirmar turno en estado " + estado
+            FIN SI
+        FIN MÉTODO
 
-    PÚBLICO cancelar(motivoCancelacion: cadena): vacío
-        SI estado ≠ "CANCELADO" Y estado ≠ "FINALIZADO" ENTONCES
-            estado = "CANCELADO"
-            observaciones = "Cancelado: " + motivoCancelacion
-            IMPRIMIR "Turno cancelado"
-        SINO
-            LANZAR_EXCEPCIÓN "No se puede cancelar turno en estado " + estado
-        FIN SI
-    FIN MÉTODO
+        PÚBLICO cancelar(motivoCancelacion: cadena): vacío
+            SI estado <> "CANCELADO" Y estado <> "FINALIZADO" ENTONCES
+                estado = "CANCELADO"
+                observaciones = "Cancelado: " + motivoCancelacion
+                IMPRIMIR "Turno cancelado"
+            SINO
+                LANZAR_EXCEPCIÓN "No se puede cancelar turno en estado " + estado
+            FIN SI
+        FIN MÉTODO
 
-    PÚBLICO reprogramar(nuevaFecha: fecha, nuevaHora: tiempo): vacío
-        SI estado = "SOLICITADO" O estado = "CONFIRMADO" ENTONCES
-            fecha = nuevaFecha
-            hora = nuevaHora
-            estado = "SOLICITADO"
-            observaciones = observaciones + " - Reprogramado"
-            IMPRIMIR "Turno reprogramado"
-        SINO
-            LANZAR_EXCEPCIÓN "No se puede reprogramar turno en estado " + estado
-        FIN SI
-    FIN MÉTODO
+        PÚBLICO reprogramar(nuevaFecha: fecha, nuevaHora: tiempo): vacío
+            SI estado = "SOLICITADO" O estado = "CONFIRMADO" ENTONCES
+                fecha = nuevaFecha
+                hora = nuevaHora
+                estado = "SOLICITADO"
+                observaciones = observaciones + " - Reprogramado"
+                IMPRIMIR "Turno reprogramado"
+            SINO
+                LANZAR_EXCEPCIÓN "No se puede reprogramar turno en estado " + estado
+            FIN SI
+        FIN MÉTODO
 
-    PÚBLICO validarAutorizacion(): booleano
-        SI requiereAutorizacion ENTONCES
-            RETORNAR tokenAutorizacion ≠ "" Y tokenAutorizacion ≠ NULO
-        SINO
-            RETORNAR VERDADERO
-        FIN SI
-    FIN MÉTODO
+        PÚBLICO validarAutorizacion(): booleano
+            SI requiereAutorizacion ENTONCES
+                RETORNAR tokenAutorizacion <> "" Y tokenAutorizacion <> NULO
+            SINO
+                RETORNAR VERDADERO
+            FIN SI
+        FIN MÉTODO
 
-    PÚBLICO getEstado(): cadena
-        RETORNAR estado
-    FIN MÉTODO
+        PÚBLICO getEstado(): cadena
+            RETORNAR estado
+        FIN MÉTODO
 
-FIN CLASE
+    FIN CLASE
