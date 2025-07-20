@@ -4,7 +4,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 ## Relación con principios SOLID
 
-*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal del Poliformismo se da con los siguientes:*
+*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal del Poliformismo se da con los siguientes:*
 
 + **Open/Closed Principle (OCP):** Facilita la extensión del sistema mediante nuevas implementaciones polimórficas sin modificar el código cliente existente, ya que las nuevas clases pueden implementar las mismas interfaces y ser utilizadas de manera intercambiable.
 
@@ -12,7 +12,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 ## Relación con patrones de diseño
 
-+ **Patrones Creacionales:** Por ehjemplo, Abstract Factory utiliza polimorfismo donde diferentes factories concretos implementan la misma interfaz de creación, permitiendo que el código cliente use cualquier factory de manera intercambiable sin conocer cuál está usando específicamente, creando familias de productos compatibles polimórficamente.
++ **Patrones Creacionales:** Por ejemplo, Abstract Factory utiliza polimorfismo donde diferentes factories concretos implementan la misma interfaz de creación, permitiendo que el código cliente use cualquier factory de manera intercambiable sin conocer cuál está usando específicamente, creando familias de productos compatibles polimórficamente.
 
 + **Patrones Estructurales:** En cuanto a patrones estructurales, Strategy utiliza polimorfismo como su mecanismo central donde diferentes algoritmos implementan la misma interfaz, permitiendo que el contexto cambie de estrategia dinámicamente y trate a todas las estrategias de manera uniforme sin conocer su implementación específica.
   
