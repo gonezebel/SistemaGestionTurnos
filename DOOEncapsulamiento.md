@@ -28,7 +28,7 @@ La clase Turno del diagrama de clases representa un ejemplo de encapsulamiento a
 
 ## Ejemplo de PseudoCódigo
 
-CLASE Turno
+      CLASE Turno
         PRIVADO numeroTurno: cadena
         PRIVADO fecha: fecha
         PRIVADO hora: tiempo
