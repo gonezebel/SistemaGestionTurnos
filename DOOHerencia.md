@@ -28,5 +28,47 @@ La jerarquía Persona → Profesional representa un ejemplo de herencia donde la
 
 ![Ejemplo_Herencia](imagenes/EJEMPLO_HERENCIA_V2.jpg)
 
-## Ejemplo de Código
+## Ejemplo de PseudoCódigo
+
+    CLASE Profesional HEREDA DE Persona
+         PRIVADO especialidad: cadena
+         PRIVADO numeroMatricula: cadena
+         PRIVADO vigenciaMatricula: fecha
+         PRIVADO tipoContrato: cadena
+         PRIVADO horarioContrato: cadena
+
+        CONSTRUCTOR Profesional(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, especialidad, numeroMatricula, vigenciaMatricula)
+            SUPER(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email)
+            ESTE.especialidad = especialidad
+            ESTE.numeroMatricula = numeroMatricula
+            ESTE.vigenciaMatricula = vigenciaMatricula
+            ESTE.tipoContrato = ""
+            ESTE.horarioContrato = ""
+        FIN CONSTRUCTOR
+
+        PÚBLICO getEspecialidad(): cadena
+            RETORNAR especialidad
+        FIN MÉTODO
+
+        PÚBLICO validarMatricula(): booleano
+            fechaActual = fechaActual()
+            RETORNAR vigenciaMatricula >= fechaActual Y numeroMatricula <> ""
+        FIN MÉTODO
+
+        PÚBLICO getAgenda(): Agenda
+            // Lógica para obtener agenda del profesional
+            RETORNAR nuevaAgenda
+        FIN MÉTODO
+
+        PÚBLICO getTurnosDelDia(fecha: fecha): Lista<Turno>
+            // Lógica para obtener turnos de una fecha específica
+            RETORNAR listaTurnos
+        FIN MÉTODO
+
+        PÚBLICO verificarDisponibilidad(fecha: fecha, hora: tiempo): booleano
+            // Lógica para verificar disponibilidad en fecha y hora
+            RETORNAR disponible
+        FIN MÉTODO
+
+    FIN CLASE
 
