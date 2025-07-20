@@ -69,7 +69,9 @@ La jerarquía Persona → Profesional representa un ejemplo de herencia donde la
             // Lógica para verificar disponibilidad en fecha y hora
             RETORNAR disponible
         FIN MÉTODO
+        
     FIN CLASE
+
 
 ### Justificación:
 
