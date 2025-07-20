@@ -42,15 +42,15 @@ La clase abstracta Persona y sus especialización Paciente aplican el principio 
 
 ## Ejemplo de PseudoCódigo
 
-  CLASE ABSTRACTA Persona
-        PROTEGIDO nombre: cadena
-        PROTEGIDO apellido: cadena
-        PROTEGIDO dni: cadena
-        PROTEGIDO fechaNacimiento: fecha
-        PROTEGIDO sexo: cadena
-        PROTEGIDO domicilio: cadena
-        PROTEGIDO telefono: cadena
-        PROTEGIDO email: cadena
+    CLASE ABSTRACTA Persona
+         PROTEGIDO nombre: cadena
+         PROTEGIDO apellido: cadena
+         PROTEGIDO dni: cadena
+         PROTEGIDO fechaNacimiento: fecha
+         PROTEGIDO sexo: cadena
+         PROTEGIDO domicilio: cadena
+         PROTEGIDO telefono: cadena
+         PROTEGIDO email: cadena
 
         CONSTRUCTOR Persona(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email)
             ESTE.nombre = nombre
