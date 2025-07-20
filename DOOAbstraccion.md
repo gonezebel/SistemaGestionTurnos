@@ -16,9 +16,9 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 ## Relación con patrones de diseño
 
-+ **Patrones Creacionales**: Por ejemplo, los patrones Factory Method y Abstract Factory, utilizan abstracciones para simplificar la de creación de objetos. Factory lo implementa a traves de una superclase, delegando a las subclases la decisión de la instanciación concreta; mientras que qAbstract extiende la abstracción para crear familias completas de objetos relacionados sin especificar la clase concreta.
++ **Patrones Creacionales**: Por ejemplo, los patrones Factory Method y Abstract Factory, utilizan abstracciones para simplificar la de creación de objetos. Factory lo implementa a traves de una superclase, delegando a las subclases la decisión de la instanciación concreta; mientras que Abstract extiende la abstracción para crear familias completas de objetos relacionados sin especificar la clase concreta.
 
-+ **Patrones Estructurales**: En primer lugar, el patrón Bridge, utiliza la abstracción para separar completamente "qué hace un objeto" de "cómo lo hace". Crea dos jerarquías independientes: una abstracción que define las operaciones de alto nivel que ve el cliente, y una implementación que define las operaciones que ejecutan. Esto permite que ambas jerarquías evolucionen independientemente.
++ **Patrones Estructurales**: En primer lugar el patrón Bridge, utiliza la abstracción para separar completamente "qué hace un objeto" de "cómo lo hace". Crea dos jerarquías independientes: una abstracción que define las operaciones de alto nivel que ve el cliente, y una implementación que define las operaciones que ejecutan. Esto permite que ambas jerarquías evolucionen independientemente.
 
 Por otro lado, patrones como Adapter y Decorator, emplean abstracciones para definir interfaces comunes que permiten la interoperabilidad entre componentes incompatibles en el primero o la extensión transparente de funcionalidades en el segundo.
 
@@ -28,7 +28,7 @@ Por otro lado, patrones como Adapter y Decorator, emplean abstracciones para def
 
 + **Patrones de Comportamiento**: Patrones como Strategy y State utilizan abstracciones para encapsular algoritmos y comportamientos variables, permitiendo su intercambio dinámico sin afectar el contexto.
 
-    * En Strategy, por ejemplo, se define una abstracción común para una familia de algoritmos intercambiables. Esta  abstracción separa la interfaz del algoritmo de su implementación, permitiendo agregar nuevos algoritmos en forma modular simplificada.
+    * En Strategy, se define una abstracción común para una familia de algoritmos intercambiables. Esta abstracción permite tomar una clase que hace algo específico de muchas maneras diferentes y extraer todos estos algoritmos en clases separadas llamadas estrategias. Esto hace posible intercambiar algoritmos dinámicamente en tiempo de ejecución sin modificar el código cliente, ya que todos los algoritmos implementan la misma interfaz abstracta.
 
     * Respecto a State, la abstracción define operaciones comunes que todos los estados deben implementar. Cada estado concreto maneja estas operaciones según su lógica específica, mientras que el contexto delega comportamientos a través de la abstracción. Esto permite que el objeto cambie de comportamiento dinámicamente manteniendo una interfaz consistente.
  
