@@ -14,7 +14,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 + **Patrones Creacionales:** Por ejemplo, Abstract Factory utiliza polimorfismo donde diferentes factories concretos implementan la misma interfaz de creación, permitiendo que el código cliente use cualquier factory de manera intercambiable sin conocer cuál está usando específicamente, creando familias de productos compatibles polimórficamente.
 
-+ **Patrones Estructurales:** En cuanto a patrones estructurales, Strategy utiliza polimorfismo como su mecanismo central donde diferentes algoritmos implementan la misma interfaz, permitiendo que el contexto cambie de estrategia dinámicamente y trate a todas las estrategias de manera uniforme sin conocer su implementación específica.
++ **Patrones Estructurales:** En cuanto a patrones estructurales, Composite utiliza polimorfismo como su mecanismo central donde tanto objetos simples (hojas) como objetos compuestos (contenedores) implementan la misma interfaz Component, permitiendo que el código cliente trate a elementos individuales y composiciones complejas de manera uniforme sin conocer si está trabajando con un objeto simple o una estructura jerárquica compleja.
   
 + **Patrones de Comportamiento:** En referencia a patrones de comportamiento, Observer utiliza polimorfismo donde diferentes observadores implementan la misma interfaz de notificación, permitiendo que el sujeto notifique a todos los observadores de manera uniforme sin conocer sus tipos específicos. Por otro lado, Command emplea polimorfismo donde diferentes comandos concretos implementan la misma interfaz, permitiendo invocar, deshacer y gestionar comandos de manera uniforme independientemente de la operación específica que encapsulen.
 
