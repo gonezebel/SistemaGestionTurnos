@@ -93,23 +93,3 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
         FIN MÉTODO
 
     FIN CLASE
-
-    // Demostración de POLIMORFISMO
-    FUNCIÓN demostrarPolimorfismo()
-        profesionales: Lista<Profesional> = nuevaLista()
-        
-        AGREGAR nuevoMedicoClinico(...) A profesionales
-        AGREGAR nuevoRadiologo(...) A profesionales
-        AGREGAR nuevoFisioterapeuta(...) A profesionales
-        
-        PARA CADA profesional EN profesionales HACER
-            IMPRIMIR profesional.getNombreCompleto() + " - " + profesional.getEspecialidad()
-            
-            // Polimorfismo: cada subclase implementa validarMatricula de manera específica
-            SI profesional.validarMatricula() ENTONCES
-                IMPRIMIR "Matrícula válida"
-            SINO
-                IMPRIMIR "Matrícula vencida"
-            FIN SI
-        FIN PARA
-    FIN FUNCIÓN
