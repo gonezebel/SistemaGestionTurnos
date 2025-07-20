@@ -4,7 +4,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 ## Relación con principios SOLID
 
-*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal del Poliformismo se da con los siguientes:*
+*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal del Polimorfismo se da con los siguientes:*
 
 + **Open/Closed Principle (OCP):** Facilita la extensión del sistema mediante nuevas implementaciones polimórficas sin modificar el código cliente existente, ya que las nuevas clases pueden implementar las mismas interfaces y ser utilizadas de manera intercambiable.
 
@@ -24,7 +24,7 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
 
 [**Link Drawio**](https://drive.google.com/file/d/1y0vTbJRasJFrk-96eqUQ9xebRLURWaHm/view?usp=sharing)
 
-![Ejemplo_Polimorfismo](imagenes/EJEMPLO_POLIFORMISMO.jpg)
+![Ejemplo_Polimorfismo](imagenes/EJEMPLO_POLIMORFISMO.jpg)
 
 ## Ejemplo de PseudoCódigo
 
