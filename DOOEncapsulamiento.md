@@ -97,6 +97,88 @@ La clase Turno del diagrama de clases representa un ejemplo de encapsulamiento a
     FIN CLASE
 
 
+
+
+
+    import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Turno {
+    // Atributos privados - ENCAPSULACIÓN
+    private String numeroTurno;
+    private LocalDate fecha;
+    private LocalTime hora;
+    private String estado;
+    private String motivo;
+    private String observaciones;
+    private LocalDate fechaCreacion;
+    private boolean requiereAutorizacion;
+    private String tokenAutorizacion;
+
+    // Constructor
+    public Turno(String numeroTurno, LocalDate fecha, LocalTime hora, String motivo) {
+        this.numeroTurno = numeroTurno;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.motivo = motivo;
+        this.estado = "SOLICITADO";
+        this.fechaCreacion = LocalDate.now();
+        this.requiereAutorizacion = false;
+        this.tokenAutorizacion = "";
+        this.observaciones = "";
+    }
+
+    // Métodos públicos que controlan el acceso a los datos privados
+    public void confirmar() {
+        if ("SOLICITADO".equals(estado)) {
+            estado = "CONFIRMADO";
+            System.out.println("Turno confirmado");
+        } else {
+            throw new IllegalStateException("No se puede confirmar turno en estado " + estado);
+        }
+    }
+
+    public void cancelar(String motivoCancelacion) {
+        if (!"CANCELADO".equals(estado) && !"FINALIZADO".equals(estado)) {
+            estado = "CANCELADO";
+            observaciones = "Cancelado: " + motivoCancelacion;
+            System.out.println("Turno cancelado");
+        } else {
+            throw new IllegalStateException("No se puede cancelar turno en estado " + estado);
+        }
+    }
+
+    public void reprogramar(LocalDate nuevaFecha, LocalTime nuevaHora) {
+        if ("SOLICITADO".equals(estado) || "CONFIRMADO".equals(estado)) {
+            this.fecha = nuevaFecha;
+            this.hora = nuevaHora;
+            this.estado = "SOLICITADO";
+            this.observaciones += " - Reprogramado";
+            System.out.println("Turno reprogramado");
+        } else {
+            throw new IllegalStateException("No se puede reprogramar turno en estado " + estado);
+        }
+    }
+
+    public boolean validarAutorizacion() {
+        if (requiereAutorizacion) {
+            return tokenAutorizacion != null && !tokenAutorizacion.isEmpty();
+        }
+        return true;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    // Getters y setters adicionales según sea necesario
+    public String getNumeroTurno() { return numeroTurno; }
+    public LocalDate getFecha() { return fecha; }
+    public LocalTime getHora() { return hora; }
+    public String getMotivo() { return motivo; }
+}
+
+
 ### Justificación:
 
 + *Los atributos PRIVADO numeroTurno, PRIVADO fecha, PRIVADO estado, etc., demuestran el ocultamiento de datos (-), ningún código externo puede acceder directamente a estos campos.*
