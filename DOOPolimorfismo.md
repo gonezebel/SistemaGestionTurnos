@@ -27,3 +27,89 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
 ![Ejemplo_Poliformismo](imagenes/EJEMPLO_POLIFORMISMO.jpg)
 
 ## Ejemplo de Código
+
+    CLASE MedicoClinico HEREDA DE Profesional
+         PRIVADO consultorio: cadena
+
+        CONSTRUCTOR MedicoClinico(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, numeroMatricula, vigenciaMatricula, consultorio)
+            SUPER(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, "Medicina General", numeroMatricula, vigenciaMatricula)
+            ESTE.consultorio = consultorio
+        FIN CONSTRUCTOR
+
+        PÚBLICO realizarConsulta(): vacío
+            IMPRIMIR "Realizando consulta médica general en consultorio " + consultorio
+        FIN MÉTODO
+
+        PÚBLICO prescribirMedicamento(medicamento: cadena): vacío
+            IMPRIMIR "Prescribiendo medicamento: " + medicamento
+        FIN MÉTODO
+
+        PÚBLICO emitirDiagnostico(): cadena
+            RETORNAR "Diagnóstico médico general emitido"
+        FIN MÉTODO
+
+    FIN CLASE
+
+    CLASE Radiologo HEREDA DE Profesional
+        PRIVADO equipamiento: Lista<cadena>
+
+        CONSTRUCTOR Radiologo(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, numeroMatricula, vigenciaMatricula)
+            SUPER(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, "Radiología", numeroMatricula, vigenciaMatricula)
+            ESTE.equipamiento = nuevaLista()
+        FIN CONSTRUCTOR
+
+        PÚBLICO interpretarImagen(imagen: cadena): cadena
+            RETORNAR "Interpretando imagen radiológica: " + imagen
+        FIN MÉTODO
+
+        PÚBLICO solicitarEstudio(tipo: cadena): vacío
+            IMPRIMIR "Solicitando estudio radiológico: " + tipo
+        FIN MÉTODO
+
+        PÚBLICO emitirInforme(): cadena
+            RETORNAR "Informe radiológico emitido"
+        FIN MÉTODO
+
+    FIN CLASE
+
+    CLASE Fisioterapeuta HEREDA DE Profesional
+        PRIVADO certificaciones: Lista<cadena>
+
+        CONSTRUCTOR Fisioterapeuta(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, numeroMatricula, vigenciaMatricula)
+            SUPER(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email, "Fisioterapia", numeroMatricula, vigenciaMatricula)
+            ESTE.certificaciones = nuevaLista()
+        FIN CONSTRUCTOR
+
+        PÚBLICO disenarPlanTerapia(): cadena
+            RETORNAR "Plan de terapia física diseñado"
+        FIN MÉTODO
+
+        PÚBLICO realizarTerapiaFisica(): vacío
+            IMPRIMIR "Realizando sesión de terapia física"
+        FIN MÉTODO
+
+        PÚBLICO evaluarProgreso(): cadena
+            RETORNAR "Evaluación de progreso del paciente"
+        FIN MÉTODO
+
+    FIN CLASE
+
+    // Demostración de POLIMORFISMO
+    FUNCIÓN demostrarPolimorfismo()
+        profesionales: Lista<Profesional> = nuevaLista()
+        
+        AGREGAR nuevoMedicoClinico(...) A profesionales
+        AGREGAR nuevoRadiologo(...) A profesionales
+        AGREGAR nuevoFisioterapeuta(...) A profesionales
+        
+        PARA CADA profesional EN profesionales HACER
+            IMPRIMIR profesional.getNombreCompleto() + " - " + profesional.getEspecialidad()
+            
+            // Polimorfismo: cada subclase implementa validarMatricula de manera específica
+            SI profesional.validarMatricula() ENTONCES
+                IMPRIMIR "Matrícula válida"
+            SINO
+                IMPRIMIR "Matrícula vencida"
+            FIN SI
+        FIN PARA
+    FIN FUNCIÓN
