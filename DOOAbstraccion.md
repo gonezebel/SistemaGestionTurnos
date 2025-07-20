@@ -127,7 +127,7 @@ La clase abstracta Persona y su especialización Paciente aplicaN el principio d
 
     FIN CLASE
 
-    ### Justificación:
+### Justificación:
 
 + *CLASE ABSTRACTA Persona define una clase base abstracta que no puede ser instanciada directamente, estableciendo un contrato común.*
 + *Los métodos públicos como getNombreCompleto() y getContacto() proporcionan una interfaz simplificada que oculta la complejidad de manipular múltiples atributos internos.*
