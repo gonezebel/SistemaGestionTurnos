@@ -42,7 +42,7 @@ La clase abstracta Persona y sus especialización Paciente aplican el principio 
 
 ## Ejemplo de PseudoCódigo
 
-CLASE ABSTRACTA Persona
+  CLASE ABSTRACTA Persona
         PROTEGIDO nombre: cadena
         PROTEGIDO apellido: cadena
         PROTEGIDO dni: cadena
