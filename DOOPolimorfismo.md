@@ -1,4 +1,4 @@
-# Poliformismo
+# Polimorfismo
 
 El polimorfismo es el principio que permite que objetos de diferentes clases respondan de manera distinta a la misma interfaz o mensaje, manteniendo la capacidad de ser tratados de manera uniforme. Este principio establece que una misma operación puede comportarse de forma diferente según el tipo específico del objeto que la ejecute, permitiendo que el código cliente trabaje con abstracciones sin conocer los detalles específicos de cada implementación concreta, obteniendo reutilización de código genérico flexibilidad y extensibilidad. 
 
@@ -16,7 +16,7 @@ El polimorfismo es el principio que permite que objetos de diferentes clases res
 
 + **Patrones Estructurales:** En cuanto a patrones estructurales, Strategy utiliza polimorfismo como su mecanismo central donde diferentes algoritmos implementan la misma interfaz, permitiendo que el contexto cambie de estrategia dinámicamente y trate a todas las estrategias de manera uniforme sin conocer su implementación específica.
   
-+ **Patrones de Comportamiento:** En referencia a patrones de comportamiento, Observer utiliza polimorfismo donde diferentes observadores implementan la misma interfaz de notificación, permitiendo que el sujeto notifique a todos los observadores de manera uniforme sin conocer sus tipos específicos. Command emplea polimorfismo donde diferentes comandos concretos implementan la misma interfaz, permitiendo invocar, deshacer y gestionar comandos de manera uniforme independientemente de la operación específica que encapsulen.
++ **Patrones de Comportamiento:** En referencia a patrones de comportamiento, Observer utiliza polimorfismo donde diferentes observadores implementan la misma interfaz de notificación, permitiendo que el sujeto notifique a todos los observadores de manera uniforme sin conocer sus tipos específicos. Por otro lado, Command emplea polimorfismo donde diferentes comandos concretos implementan la misma interfaz, permitiendo invocar, deshacer y gestionar comandos de manera uniforme independientemente de la operación específica que encapsulen.
 
 ## Ejemplo en el proyecto
 
@@ -24,7 +24,7 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
 
 [**Link Drawio**](https://drive.google.com/file/d/1y0vTbJRasJFrk-96eqUQ9xebRLURWaHm/view?usp=sharing)
 
-![Ejemplo_Poliformismo](imagenes/EJEMPLO_POLIFORMISMO.jpg)
+![Ejemplo_Polimorfismo](imagenes/EJEMPLO_POLIFORMISMO.jpg)
 
 ## Ejemplo de PseudoCódigo
 
