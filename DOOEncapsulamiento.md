@@ -12,7 +12,7 @@ El encapsulamiento es el principio de la POO que busca ocultar los detalles inte
 
 ## Relación con patrones de diseño
 
-+ **Patrones Creacionales**: Por ejemplo, Builder encapsula el proceso complejo de construcción de objetos paso a paso, ocultando los detalles de cómo se ensamblan las partes internas y exponiendo solo métodos específicos para configurar cada aspecto, mientras que Prototype encapsula la lógica de clonación de objetos manteniendo privados los detalles de copia profunda y exponiendo solo el método clone() para crear duplicados.
++ **Patrones Creacionales**: Por ejemplo, Builder encapsula el proceso complejo de construcción de objetos paso a paso, ocultando los detalles de cómo se ensamblan las partes internas y exponiendo solo métodos específicos para configurar cada aspecto, mientras que Prototype encapsula la lógica de clonación de objetos manteniendo privados los detalles de copia profunda y exponiendo solo el método para crear duplicados.
 
 + **Patrones Estructurales**: Composite encapsula la complejidad de manejar tanto objetos individuales como grupos de objetos detrás de una interfaz común, ocultando si se está trabajando con una hoja o un contenedor, mientras que Facade encapsula múltiples subsistemas complejos detrás de una interfaz unificada y simplificada, manteniendo privadas las interacciones entre subsistemas.
 
