@@ -8,7 +8,7 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 ## Relación con principios SOLID:
 
-*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal de la Abstracción se da con los siguientes:*
+*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal de la Abstracción se da con los siguientes:*
 
 + **Single Responsibility Principle (SRP)**: La abstracción ayuda a definir responsabilidades claras y únicas para cada clase. Al abstraer solo los aspectos esenciales de una entidad, naturalmente se delimita su responsabilidad principal, evitando la sobrecarga de funcionalidades no relacionadas.
 
