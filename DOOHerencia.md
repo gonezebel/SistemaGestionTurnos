@@ -4,7 +4,7 @@ La herencia es el principio de la POO que permite que una subclase o clase deriv
 
 ## Relación con los Principios SOLID
 
-*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal de la Herencia se da con los siguientes:*
+*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal de la Herencia se da con los siguientes:*
 
 + **Liskov Substitution Principle (LSP):** La herencia es el mecanismo principal que hace posible la sustitución de Liskov, ya que las subclases deben poder reemplazar a sus superclases sin alterar el comportamiento esperado del sistema, siendo fundamental que las clases derivadas respeten los contratos establecidos por sus clases base.
 
