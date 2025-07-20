@@ -40,7 +40,92 @@ La clase abstracta Persona y sus especialización Paciente aplican el principio 
 
 ![Ejemplo_Abstracción](imagenes/EJEMPLO_ABSTRACCIÓN_V2.jpg)
 
-## Ejemplo de Código
+## Ejemplo de PseudoCódigo
+
+CLASE ABSTRACTA Persona
+        PROTEGIDO nombre: cadena
+        PROTEGIDO apellido: cadena
+        PROTEGIDO dni: cadena
+        PROTEGIDO fechaNacimiento: fecha
+        PROTEGIDO sexo: cadena
+        PROTEGIDO domicilio: cadena
+        PROTEGIDO telefono: cadena
+        PROTEGIDO email: cadena
+
+        CONSTRUCTOR Persona(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email)
+            ESTE.nombre = nombre
+            ESTE.apellido = apellido
+            ESTE.dni = dni
+            ESTE.fechaNacimiento = fechaNacimiento
+            ESTE.sexo = sexo
+            ESTE.domicilio = domicilio
+            ESTE.telefono = telefono
+            ESTE.email = email
+        FIN CONSTRUCTOR
+
+        PÚBLICO getNombreCompleto(): cadena
+            RETORNAR nombre + " " + apellido
+        FIN MÉTODO
+
+        PÚBLICO getContacto(): cadena
+            RETORNAR "Tel: " + telefono + " Email: " + email
+        FIN MÉTODO
+
+        PÚBLICO validarDatos(): booleano
+            RETORNAR dni <> "" Y nombre <> "" Y apellido <> ""
+        FIN MÉTODO
+
+        PÚBLICO actualizarContacto(nuevoTelefono: cadena, nuevoEmail: cadena): vacío
+            telefono = nuevoTelefono
+            email = nuevoEmail
+        FIN MÉTODO
+
+    FIN CLASE
+
+    CLASE Paciente HEREDA DE Persona
+        PRIVADO numeroHistoriaClinica: cadena
+        PRIVADO fechaRegistro: fecha
+        PRIVADO coberturaSalud: cadena
+        PRIVADO numeroAfiliado: cadena
+        PRIVADO datosEmergencia: cadena
+
+        CONSTRUCTOR Paciente(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email)
+            SUPER(nombre, apellido, dni, fechaNacimiento, sexo, domicilio, telefono, email)
+            ESTE.numeroHistoriaClinica = generarNumeroHistoria()
+            ESTE.fechaRegistro = fechaActual()
+            ESTE.coberturaSalud = ""
+            ESTE.numeroAfiliado = ""
+            ESTE.datosEmergencia = ""
+        FIN CONSTRUCTOR
+
+        PÚBLICO getHistoriaClinica(): cadena
+            RETORNAR numeroHistoriaClinica
+        FIN MÉTODO
+
+        PÚBLICO validarCobertura(): booleano
+            RETORNAR coberturaSalud <> "" Y numeroAfiliado <> ""
+        FIN MÉTODO
+
+        PÚBLICO actualizarCobertura(cobertura: cadena, numero: cadena): vacío
+            coberturaSalud = cobertura
+            numeroAfiliado = numero
+        FIN MÉTODO
+
+        PÚBLICO getTurnosActivos(): Lista<Turno>
+            // Lógica para obtener turnos activos
+            RETORNAR listaTurnos
+        FIN MÉTODO
+
+        PÚBLICO getHistorialTurnos(): Lista<Turno>
+            // Lógica para obtener historial completo
+            RETORNAR historialCompleto
+        FIN MÉTODO
+
+        PRIVADO generarNumeroHistoria(): cadena
+            RETORNAR "HC" + fechaActual().año + "-" + númeroSecuencial()
+        FIN MÉTODO
+
+    FIN CLASE
 
 
 
