@@ -4,7 +4,7 @@ El encapsulamiento es el principio de la POO que busca ocultar los detalles inte
 
 ## Relación con principios SOLID
 
-*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado cumplimiento general de los principios de POO, la relación principal del Encapsulamiento se da con los siguientes:*
+*Si bien la aplicación del los principios SOLID en forma concurrente genera un diseño de sistema eficiente y un estado de cumplimiento general de los principios de POO, la relación principal del Encapsulamiento se da con los siguientes:*
 
 + **Interface Segregation Principle (ISP)**: El encapsulamiento implementa directamente el ISP mediante los modificadores de visibilidad que controlan exactamente qué métodos y datos son accesibles desde el exterior, permitiendo crear interfaces públicas específicas y enfocadas para diferentes tipos de clientes. Al marcar elementos como privados, protegidos o públicos, el encapsulamiento evita que las clases cliente dependan de funcionalidades internas que no necesitan, exponiendo solo los métodos relevantes para cada uso específico y segregando automáticamente las interfaces según las necesidades de cada cliente.
 
