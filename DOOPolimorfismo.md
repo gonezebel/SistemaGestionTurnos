@@ -93,3 +93,9 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
         FIN MÉTODO
 
     FIN CLASE
+
+### Justificación:
+
++ *Las CLASE MedicoClinico HEREDA DE Profesional, CLASE Radiologo HEREDA DE Profesional, y CLASE Fisioterapeuta HEREDA DE Profesional establecen una jerarquía polimórfica donde todas las subclases pueden ser tratadas como Profesional.*
++ *Los constructores llaman a SUPER(...) con diferentes especialidades ("Medicina General", "Radiología", "Fisioterapia"), mostrando comportamiento especializado manteniendo la interfaz común.*
++ *Cada subclase implementa métodos específicos (realizarConsulta(), interpretarImagen(), disenarPlanTerapia()) que demuestran diferentes comportamientos para el mismo tipo de objeto.*
