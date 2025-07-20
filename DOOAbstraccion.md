@@ -16,7 +16,7 @@ En el diseño orientado a objetos, la abstracción es el proceso mediante el cua
 
 ## Relación con patrones de diseño
 
-+ **Patrones Creacionales**: Por ejemplo, los patrones Factory Method y Abstract Factory, utilizan abstracciones para simplificar la de creación de objetos. Factory lo implementa a traves de una superclase, delegando a las subclases la decisión de la instanciación concreta; mientras que que Abstract extiende la abstracción para crear familias completas de objetos relacionados sin especificar clase concreta.
++ **Patrones Creacionales**: Por ejemplo, los patrones Factory Method y Abstract Factory, utilizan abstracciones para simplificar la de creación de objetos. Factory lo implementa a traves de una superclase, delegando a las subclases la decisión de la instanciación concreta; mientras que qAbstract extiende la abstracción para crear familias completas de objetos relacionados sin especificar la clase concreta.
 
 + **Patrones Estructurales**: En primer lugar, el patrón Bridge, utiliza la abstracción para separar completamente "qué hace un objeto" de "cómo lo hace". Crea dos jerarquías independientes: una abstracción que define las operaciones de alto nivel que ve el cliente, y una implementación que define las operaciones que ejecutan. Esto permite que ambas jerarquías evolucionen independientemente.
 
