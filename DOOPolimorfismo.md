@@ -26,7 +26,7 @@ En el sistema de turnos médicos, el polimorfismo se manifiesta en la jerarquía
 
 ![Ejemplo_Poliformismo](imagenes/EJEMPLO_POLIFORMISMO.jpg)
 
-## Ejemplo de Código
+## Ejemplo de PseudoCódigo
 
     CLASE MedicoClinico HEREDA DE Profesional
          PRIVADO consultorio: cadena
