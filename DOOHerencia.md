@@ -69,6 +69,11 @@ La jerarquía Persona → Profesional representa un ejemplo de herencia donde la
             // Lógica para verificar disponibilidad en fecha y hora
             RETORNAR disponible
         FIN MÉTODO
-
     FIN CLASE
+
+### Justificación:
+
++ *CLASE Profesional HEREDA DE Persona establece la relación de herencia explícita usando la palabra clave HEREDA.*
++ *La llamada SUPER(nombre, apellido, ...) demuestra la reutilización del constructor padre, evitando duplicación de código de inicialización.*
++ *Los métodos como getEspecialidad() y validarMatricula() muestran extensión de funcionalidad - la subclase agrega comportamientos específicos manteniendo los heredados.*
 
