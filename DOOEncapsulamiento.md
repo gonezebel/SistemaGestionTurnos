@@ -99,6 +99,6 @@ La clase Turno del diagrama de clases representa un ejemplo de encapsulamiento a
 
 ### Justificación:
 
-+ *Los atributos PRIVADO numeroTurno, PRIVADO fecha, PRIVADO estado, etc., demuestran el ocultamiento de datos - ningún código externo puede acceder directamente a estos campos.*
++ *Los atributos PRIVADO numeroTurno, PRIVADO fecha, PRIVADO estado, etc., demuestran el ocultamiento de datos (-), ningún código externo puede acceder directamente a estos campos.*
 + *El método PÚBLICO confirmar() controla el acceso controlado al atributo privado estado, validando que solo se pueda confirmar desde estado "SOLICITADO".*
 + *El método PÚBLICO getEstado() proporciona acceso de solo lectura al estado interno sin permitir modificación directa.*
